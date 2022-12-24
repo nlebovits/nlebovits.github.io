@@ -1,0 +1,302 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+    
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Nissim."
+    subtitle: "I use data to build more sustainable, inclusive cities."
+    content: "MCP @UPenn. Environmental planning and urban analytics. I work in R, Python, and ArcGIS, and believe in open-source tech and civic engagement."
+    image: /images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-twitter
+          url: https://example.com
+      customIcons:
+        - icon: /fav.png
+          url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a master's student in city planning student at the University of Pennsylvania's [Weitzman School of Design](https://www.design.upenn.edu/), with concentrations in environmental planning and spatial analysis.
+      I'm interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and working with the community.
+
+      Previously I was an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the [West Philadelphia Promise Zone](https://www.phila.gov/programs/west-philadelphia-promise-zone/). 
+
+    skills:
+      enable: true
+      title: "Here are a few tools I've been working with recently:"
+      items:
+        - "R"
+        - "Python"
+        - "ArcGIS"
+        - "Adobe Illustrator"
+        - "Quarto"
+        - "Flexdashboard"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Data & Evaluation VISTA"
+        company: "Office of Community Empowerment & Opportunity"
+        companyUrl: "https://www.phila.gov/departments/office-of-community-empowerment-and-opportunity/"
+        date: "Aug 2021 - Aug 2022"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: | 
+          As an AmeriCorps VISTA, I spearheaded data collection and analysis for the West Philadelphia Promise Zone. 
+          I established regular coordination with key data partners in the City's Offices of Innovation and Technology and Integrated Data for Evidence and Action, and at Drexel University. 
+          Working primarily in R and ArcGIS, I developed new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards.
+
+          My most important achievements include:
+
+          - Reestablishing Promsie Zone data collection after a two-year interruption due to the pandemic
+          - Establishing standardized workflows for data collection using R and [Github](https://github.com/westphl-pzrc) to maximize reproducility and continuity for future VISTAs
+          - Building a [housing dashboard to map expiring affordable housing in the Promise Zone](https://storymaps.arcgis.com/stories/b75ac94d30d941f8ab0e31c3f054f090)
+          - Using RMarkdown and RPubs to create front-facing [data visualizations](https://rpubs.com/westphl_promisezone/883881) and [downloadable datasets](https://rpubs.com/westphl_promisezone/lanc_ave_business_licenses) for the benefit of community partners
+        
+
+      - job: "Managing Editor"
+        company: "Symposeum Magazine"
+        companyUrl: "https://symposeum.us/"
+        date: "Sep 2020 - Nov 2021"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          I was lucky enough to be able to found a literary and cultural magazine with friends during the pandemic. During my year as Managinag Editor, I recruited and managed contributors for more than 100 pieces over the course of 4 issues.
+          I coordinated the editorial process, including: assigning editorial responsibilities for 12 other staff members, planning and executing quarterly schedules, and developing an in-house style guide,
+          and I edited, proofread, and wrote copy.
+
+          Some of the pieces we published that I'm most proud of are:
+
+          - ["Vital Arrogant Fatal Dominant: On Poems, Attention, and Relation"](https://symposeum.us/vital-arrogant-fatal-dominant-on-poems-attention-and-relation/), by Emily Meffert
+          - ["Ukarumpa"](https://symposeum.us/ukarumpa/), by Zoe Pehrson
+          - ["No Justice, No Peace?"](https://symposeum.us/no-justice-no-peace/), with Hadar Aviram, Joel Harrington, and Mohammed Allehbi
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master's in City Planning"
+        school:
+          name: "University of Pennsylvania"
+          url: "https://www.design.upenn.edu/"
+        date: "2022 - 2024 (Expected)"
+        content: |-
+          *Concentration in Land Use and Environmental Planning.*
+
+          Notable Classes:
+            - Spatial Statistics
+            - Raster GIS
+            - Remote Sensing
+      - title: "Bachelor of Arts in History"
+        school:
+          name: "Vanderbilt University"
+          url: "https://www.vanderbilt.edu/"
+        date: "2016 - 2020"
+        content: |-
+          Awarded full tuition, four-year merit scholarship for "bridging gaps among economically, socially, and racially diverse groups and demonstrating significant interest in issues of diversity education, tolerance, and social justice."
+
+          Received Highest Honors for ["Constructing God's Community: Umayyad Religious Monumentation in Bilad al-Sham, 610-743 CE"](https://ir.vanderbilt.edu/handle/1803/16300), a thesis in the History Department.
+
+          Awarded the 2020 Merrill Moore Poetry Prize.
+
+          Graduated *magna cum laude*.
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Business Licenses Dashboard
+        content: A custom geospatial dashboard built for West Philadelphia community organizations using open data from the City of Philadelphia.
+        image: /images/projects/profile.png
+        featured:
+          name: PZ Business Licenses
+          link: https://rpubs.com/nlebovits/pz-build-perms
+        badges:
+          - "Dashboard"
+          - "Geospatial"
+          - "Civic Tech"
+          - "Open Data"
+          - "RMarkdown"
+
+      - title: 
+        content: A research-backed dashboard to help Philadelphia residents target vacant lots to reduce gun violence citywide.
+        image: /images/projects/converter.jpg
+        featured:
+          name: PHL Gun Crime Hotspots
+          link: https://storymaps.arcgis.com/stories/551f77d85a584705b97c41db7711ba1b
+        badges:
+          - "Dashboard"
+          - "Geospatial"
+          - "ArcGIS"
+          - "Public Health"
+          - "Built Environment"
+        
+
+      - title: Weitzman Coding Resources
+        content: A growing collection of coding resources to help classmates at Penn Weitzman learn to use tech and data science for public good.
+        image: /images/projects/profile2.jpg
+        featured:
+          name: Coding Resources for Weitzman
+          link: https://east-makeup-9f0.notion.site/Coding-Resources-for-Weitzman-6bd2e0456d134976b62c523b96451d06
+        badges:
+          - "Data science"
+          - "Open Source"
+          - "R"
+          - "Python"
+        
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Got questions? Just want to say hi? Shoot me an email!
+    email: nissim@design.upenn.edu
+    btnName: Contact Me
+
+  footer:
+    socialNetworks:
+      github: https://github.com/nlebovits
+      linkedin: https://www.linkedin.com/in/nissim-lebovits-4b29b9179/
+      twitter: https://twitter.com/NissimLebovits
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
