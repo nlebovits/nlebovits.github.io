@@ -13,20 +13,20 @@ website:
       - resume.qmd
     right:
       - icon: linkedin
-        href: www.linkedin.com/in/nlebovits
+        href: "https://www.linkedin.com/in/nlebovits/"
       - icon: github
-        href: https://github.com/nlebovits/
+        href: "https://github.com/nlebovits/"
   search: 
     location: navbar
     type: overlay
       
   page-footer:
     center: |
-      [Contact Nissim](mailto:nissim@design.upenn.edu)
+      [Contact Me](mailto:nissim@design.upenn.edu)
     left: |
       Made with [Quarto](https://quarto.org/)
     right: |
-      [Github](https://github.com/nlebovits)
+      [Check out my Github](https://github.com/nlebovits)
     background: "#f8f9fa"
 
 format:
