@@ -2,49 +2,66 @@
 title: "Resume" 
 ---
 
+## Nissim Lebovits
 
-##  Nissim Lebovits
+[nissim\@design.upenn.edu](nissim@design.upenn.edu) \| [LinkedIn](https://www.linkedin.com/in/nlebovits/) \| [GitHub](https://github.com/nlebovits)
 
-[nissim@design.upenn.edu](nissim@design.upenn.edu) | Philadelphia, PA
-
-[LinkedIn](https://www.linkedin.com/in/nlebovits/) | [GitHub](https://github.com/nlebovits)
-
-
-Master's student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia.
-
+Master's student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia.
 
 ## Education
-**Master’s in City Planning**\
-University of Pennsylvania						            
+
+**Master's in City Planning**\
+University of Pennsylvania\
 Expected 2024\
+
+- [2024 Witte-Sakamoto Family Prize in City Planning](https://awards.design.upenn.edu/winner/nissim-lebovits-mcp24)
+- [Perry World House Graduate Associate](https://global.upenn.edu/perryworldhouse/news/meet-our-2023-24-perry-world-house-graduate-associates)
+
 *Relevant Courses: Raster GIS, Land Use Planning, Environmental Planning, Spatial Statistics, Geospatial Machine Learning (Remote Sensing)*
 
 **Bachelor of Arts in History**\
-Vanderbilt University							        
+Vanderbilt University\
 May 2020
 
-
 ## Relevant Experience
+
 **University of Pennsylvania**\
 August 2022 - Present\
-*Master’s Student*
+*Research Assistant*
 
- - For an independent study, using Python, JavaScript, and ArcGIS to build a dashboard and website based on research and community engagement to help grassroots organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions. 
- - Exploring geospatial trends in Philadelphia in R using spatial econometrics tools such as LISA statistics and geographically weighted regression.
- - Scraping Twitter data and performing sentiment analysis with R to explore potentially unreported boil water advisories in the United States.
- - Analyzing the local threat of sea level rise to avian biodiversity using NOAA and eBird data in R.
- - Applying Python deep learning tools to the classification of remote sensing imagery.
- - Researching issues of environmental planning in the United States, such as the threat of sea level rise in Philadelphia and the city’s potential to absorb climate refugees.
+With Prof. Allison Lassiter:
+
+- Established new applications of statistical clustering techniques such as Gaussian mixture modeling and k-means clustering to quantify the potential vulnerability of public drinking water suppliers in U.S. coastal communities to climate change.
+- Explored more than 100 scientific papers in order to develop a robust approach to characterizing water supplier vulnerability.
+- Identified, researched, and integrated more than 15 geospatial datasets on socioeconomic, infrastructural, and climatic vulnerability factors drawn primarily from U.S. federal data sources like EPA, FEMA, NOAA, and USGS.
+- Created reproducible workflows in Python, R, and ArcGIS for data manipulation, analysis, and visualization.
+
+With Prof. Matthijs Bouw: 
+
+- Developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.
+
+
+**Code for Philly**\
+July 2023 - Present\
+*Project Lead*
+
+- Led the development of an innovative, open-source data dashboard, based on previous work of mine, which leverages public data to assist community organizations in prioritizing vacant and abandoned properties for anti-gun violence interventions.
+- Rapidly assimilated and synthesized diverse information and skills related to policy, law, spatial statistics, and web development in order to integrate it into the project and convey it to team members.
+- Coordinated a team of more than 10 designers, developers, analysts, and policy experts, ensuring that all team members understood the project goals, the relevant technical information, and their own responsibilities.
+- Organized and facilitated more than 50 meetings with key stakeholders in government, academia, and local community organizations in order to ensure alignment with community needs.
+- Recruited and onboarded volunteers for the project while also canvassing potential funders to ensure the long-term viability of the project. 
+- Developed technical and practical project documentation to facilitate new volunteer contributions and ensure long-term project viability.
 
 **Office of Community Empowerment and Opportunity, City of Philadelphia**\
-July 2021 – July 2022\
+July 2021 -- July 2022\
 *Data and Evaluation VISTA*
 
- - Spearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.
- - Established and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.
- - Developed new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps.
+- Spearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.
+- Established and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.
+- Developed new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps.
 
 ## Skills
-Data Analysis: R, Python, SQL, ArcGIS\
+
+Data Analysis: R, Python, Google Earth Engine, SQL, ArcGIS\
 Data Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\
 Languages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)

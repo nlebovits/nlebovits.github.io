@@ -1,8 +1,0 @@
----
-title: "Wetland Change in Argentina"
-date: 01-2-2023 
-author: Nissim Lebovits
-categories: [code, analysis, visualization, plotly]
----
-
-I've spent this semester working on an independent study in applications of remote sensing for sustainable urban planning. For the first of two use cases, I tackled wetland change monitoring in Argentina using Landsat 7 imagery in Google Earth Engine. I put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk. Next up: urban flood prediction in Costa Rica using a deep learning model.

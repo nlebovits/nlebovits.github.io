@@ -1,0 +1,9 @@
+---
+title: "Illegal Dumping Live Dashboard"
+date: 12-2-2022 
+author: Nissim Lebovits
+categories: [geospatial, open data, urban, public health, dashboard]
+image: "dashboard_screenshot.png"
+---
+
+https://rpubs.com/nlebovits/phl-illegal-dumping

@@ -1,0 +1,8 @@
+---
+title: "Identifying Upzoning Opportunities"
+date: 12-22-2023
+categories: [geospatial, urban, prediction]
+image: "zoning.png"
+---
+
+https://nlebovits.github.io/musa-508-2023-final/

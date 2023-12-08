@@ -1,0 +1,12 @@
+---
+title: "Wetland Change in Argentina"
+date: 11-2-2023 
+author: Nissim Lebovits
+categories: [geospatial, land cover change, remote sensing, google earth engine, machine learning, global south]
+---
+
+I used **Google Earth Engine** and global wetlands datasets to train a **Random Forest** model on **Landsat 7 spectral images** and assess **wetlands change** from **2000 to 2020**.
+
+My model achieved **95% accuracy** and **65% recall**, and suggests that the **Iberá wetlands** have **declined significantly** in the past 20 years.
+
+I put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk.
