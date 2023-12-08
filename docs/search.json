@@ -4,14 +4,14 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622\nLinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
+    "text": "nissim@design.upenn.edu | Philadelphia, PA\nLinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
   },
   {
     "objectID": "resume.html#nissim-lebovits",
     "href": "resume.html#nissim-lebovits",
     "title": "Resume",
     "section": "",
-    "text": "nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622\nLinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
+    "text": "nissim@design.upenn.edu | Philadelphia, PA\nLinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
   },
   {
     "objectID": "resume.html#education",
@@ -35,11 +35,18 @@
     "text": "Skills\nData Analysis: R, Python, SQL, ArcGIS\nData Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\nLanguages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nissim Lebovits",
+    "objectID": "posts/wetland_change.html",
+    "href": "posts/wetland_change.html",
+    "title": "Wetland Change in Argentina",
     "section": "",
-    "text": "I’m a master’s student in city planning at the University of Pennsylvania’s Weitzman School of Design, where I focus on environmental planning and spatial analysis. I work primarily in R, Python, and ArcGIS, and am currently learning JavaScript. Currently, I work as a research assistant for Professor Allison Lassiter, for whom I’ll be analyzing the impacts of sea level rise on vulnerable coastal drinking water systems.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my projects page to see what I’ve been working on lately.\nPreviously I was an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the West Philadelphia Promise Zone. Before that, I was managing editor for Symposem Magazine, and before that, I studied history at Vanderbilt University."
+    "text": "I’ve spent this semester working on an independent study in applications of remote sensing for sustainable urban planning. For the first of two use cases, I tackled wetland change monitoring in Argentina using Landsat 7 imagery in Google Earth Engine. I put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk. Next up: urban flood prediction in Costa Rica using a deep learning model."
+  },
+  {
+    "objectID": "posts/dashboard/dashboard.html",
+    "href": "posts/dashboard/dashboard.html",
+    "title": "Clean & Green Philly",
+    "section": "",
+    "text": "Based on the work of Dr. Eugenia South, I have been building a dashboard to help community organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions. I am currently working to develop a more sustainable, accessible, and reproducible version of the dashboard with a combination of Python and JavaScript. I hope to launch a public version in the fall of 2023. In the meantime, you can see an ArcGIS draft of the dashboard that I made in November of 2022."
   },
   {
     "objectID": "about.html",
@@ -49,10 +56,24 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nissim Lebovits",
+    "section": "",
+    "text": "I’m a master’s student in city planning at the University of Pennsylvania’s Weitzman School of Design, where I focus on environmental planning and spatial analysis. I work primarily in R, Python, and ArcGIS, and am currently learning JavaScript. Currently, I work as a research assistant for Professor Allison Lassiter, for whom I’ll be analyzing the impacts of sea level rise on vulnerable coastal drinking water systems.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my projects page to see what I’ve been working on lately.\nPreviously I was an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the West Philadelphia Promise Zone. Before that, I was managing editor for Symposem Magazine, and before that, I studied history at Vanderbilt University."
+  },
+  {
+    "objectID": "posts/water_suppliers/index.html",
+    "href": "posts/water_suppliers/index.html",
+    "title": "Identifying Vulnerable Water Suppliers",
+    "section": "",
+    "text": "In this post, I will analyse the TidyTuesday dataset about Retail Sales .."
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "My Work",
     "section": "",
-    "text": "Academic Work\nMy master’s program has allowed me to work on projects that are both educational and practical. A good sample is available on my RPubs page. In particular, I am proud of the following:\n\nUsing NOAA and eBird data to analyze the threat of local sea level rise to avian biodiversity\nRunning logistic regressions to predict drunk driving accidents in Philadelphia\nCalculating LISA statistics and running geographically weighted regressions to explore the relationship between median home value and several neighborhood characteristics in Philadelphia\n\n\n\nGun Crimes Dashboard\nBased on the work of Dr. Eugenia South, I have been building a dashboard to help community organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions. I am currently working to develop a more sustainable, accessible, and reproducible version of the dashboard with a combination of Python and JavaScript. I hope to launch a public version in the fall of 2023. In the meantime, you can see an ArcGIS draft of the dashboard that I made in November of 2022.\n\n\nStewardship & Civic Engagement\nI believe strongly in the importance of stewardship and civic engagement. In my free time, I offer pro bono data support to a handful of community organizations and volunteer groups. You can read more about this work here. Although I have limited capacity to take on more pro bono work at the moment, I offer affordable data consulting services to community organizations. You can learn more on my Hire Me page.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Clean & Green Philly\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\nvisualization\n\n\nplotly\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\nNissim Lebovits\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying Vulnerable Water Suppliers\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\nvisualization\n\n\nplotly\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\nNissim Lebovits\n\n\n\n\n\n\n  \n\n\n\n\nWetland Change in Argentina\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\nvisualization\n\n\nplotly\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\nNissim Lebovits\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,9 @@
+---
+title: "Identifying Vulnerable Water Suppliers"
+date: 01-2-2023 
+author: Nissim Lebovits
+categories: [code, analysis, visualization, plotly]
+image: "costa_rica_slope.png"
+---
+  
+In this post, I will analyse the TidyTuesday dataset about Retail Sales ..

@@ -5,9 +5,9 @@ title: "Resume"
 
 ##  Nissim Lebovits
 
-nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622
+[nissim@design.upenn.edu](nissim@design.upenn.edu) | Philadelphia, PA
 
-LinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits
+[LinkedIn](https://www.linkedin.com/in/nlebovits/) | [GitHub](https://github.com/nlebovits)
 
 
 Master's student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia.
