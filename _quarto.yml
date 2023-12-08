@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "nlebovits.github.io"
+  title: "Nissim Lebovits"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - projects.qmd 
+      - resume.qmd
 
 format:
   html:
@@ -16,5 +17,5 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 

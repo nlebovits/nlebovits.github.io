@@ -1,0 +1,50 @@
+---
+title: "Resume" 
+---
+
+
+##  Nissim Lebovits
+
+nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622
+
+LinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits
+
+
+Master's student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia.
+
+
+## Education
+**Master’s in City Planning**\
+University of Pennsylvania						            
+Expected 2024\
+*Relevant Courses: Raster GIS, Land Use Planning, Environmental Planning, Spatial Statistics, Geospatial Machine Learning (Remote Sensing)*
+
+**Bachelor of Arts in History**\
+Vanderbilt University							        
+May 2020
+
+
+## Relevant Experience
+**University of Pennsylvania**\
+August 2022 - Present\
+*Master’s Student*
+
+ - For an independent study, using Python, JavaScript, and ArcGIS to build a dashboard and website based on research and community engagement to help grassroots organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions. 
+ - Exploring geospatial trends in Philadelphia in R using spatial econometrics tools such as LISA statistics and geographically weighted regression.
+ - Scraping Twitter data and performing sentiment analysis with R to explore potentially unreported boil water advisories in the United States.
+ - Analyzing the local threat of sea level rise to avian biodiversity using NOAA and eBird data in R.
+ - Applying Python deep learning tools to the classification of remote sensing imagery.
+ - Researching issues of environmental planning in the United States, such as the threat of sea level rise in Philadelphia and the city’s potential to absorb climate refugees.
+
+**Office of Community Empowerment and Opportunity, City of Philadelphia**\
+July 2021 – July 2022\
+*Data and Evaluation VISTA*
+
+ - Spearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.
+ - Established and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.
+ - Developed new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps.
+
+## Skills
+Data Analysis: R, Python, SQL, ArcGIS\
+Data Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\
+Languages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)

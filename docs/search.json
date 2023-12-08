@@ -1,10 +1,45 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622\nLinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
+  },
+  {
+    "objectID": "resume.html#nissim-lebovits",
+    "href": "resume.html#nissim-lebovits",
+    "title": "Resume",
+    "section": "",
+    "text": "nissim@design.upenn.edu | Philadelphia, PA | 215-520-2622\nLinkedIn: https://www.linkedin.com/in/nlebovits/ | GitHub: https://github.com/nlebovits\nMaster’s student in city planning at the University of Pennsylvania. Interested in using data to foster civic engagement and build more sustainable, inclusive cities. Experienced in Python, R, and ArcGIS. Strong communication skills. Previously an AmeriCorps VISTA with the City of Philadelphia."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\nMaster’s in City Planning\nUniversity of Pennsylvania\nExpected 2024\nRelevant Courses: Raster GIS, Land Use Planning, Environmental Planning, Spatial Statistics, Geospatial Machine Learning (Remote Sensing)\nBachelor of Arts in History\nVanderbilt University\nMay 2020"
+  },
+  {
+    "objectID": "resume.html#relevant-experience",
+    "href": "resume.html#relevant-experience",
+    "title": "Resume",
+    "section": "Relevant Experience",
+    "text": "Relevant Experience\nUniversity of Pennsylvania\nAugust 2022 - Present\nMaster’s Student\n\nFor an independent study, using Python, JavaScript, and ArcGIS to build a dashboard and website based on research and community engagement to help grassroots organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions.\nExploring geospatial trends in Philadelphia in R using spatial econometrics tools such as LISA statistics and geographically weighted regression.\nScraping Twitter data and performing sentiment analysis with R to explore potentially unreported boil water advisories in the United States.\nAnalyzing the local threat of sea level rise to avian biodiversity using NOAA and eBird data in R.\nApplying Python deep learning tools to the classification of remote sensing imagery.\nResearching issues of environmental planning in the United States, such as the threat of sea level rise in Philadelphia and the city’s potential to absorb climate refugees.\n\nOffice of Community Empowerment and Opportunity, City of Philadelphia\nJuly 2021 – July 2022\nData and Evaluation VISTA\n\nSpearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.\nEstablished and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.\nDeveloped new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\nData Analysis: R, Python, SQL, ArcGIS\nData Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\nLanguages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "nlebovits.github.io",
+    "title": "Nissim Lebovits",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I’m a master’s student in city planning at the University of Pennsylvania’s Weitzman School of Design, where I focus on environmental planning and spatial analysis. I work primarily in R, Python, and ArcGIS, and am currently learning JavaScript. Currently, I work as a research assistant for Professor Allison Lassiter, for whom I’ll be analyzing the impacts of sea level rise on vulnerable coastal drinking water systems.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my projects page to see what I’ve been working on lately.\nPreviously I was an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the West Philadelphia Promise Zone. Before that, I was managing editor for Symposem Magazine, and before that, I studied history at Vanderbilt University."
   },
   {
     "objectID": "about.html",
@@ -12,5 +47,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Work",
+    "section": "",
+    "text": "Academic Work\nMy master’s program has allowed me to work on projects that are both educational and practical. A good sample is available on my RPubs page. In particular, I am proud of the following:\n\nUsing NOAA and eBird data to analyze the threat of local sea level rise to avian biodiversity\nRunning logistic regressions to predict drunk driving accidents in Philadelphia\nCalculating LISA statistics and running geographically weighted regressions to explore the relationship between median home value and several neighborhood characteristics in Philadelphia\n\n\n\nGun Crimes Dashboard\nBased on the work of Dr. Eugenia South, I have been building a dashboard to help community organizations prioritize vacant and abandoned parcels for anti-gun violence greening interventions. I am currently working to develop a more sustainable, accessible, and reproducible version of the dashboard with a combination of Python and JavaScript. I hope to launch a public version in the fall of 2023. In the meantime, you can see an ArcGIS draft of the dashboard that I made in November of 2022.\n\n\nStewardship & Civic Engagement\nI believe strongly in the importance of stewardship and civic engagement. In my free time, I offer pro bono data support to a handful of community organizations and volunteer groups. You can read more about this work here. Although I have limited capacity to take on more pro bono work at the moment, I offer affordable data consulting services to community organizations. You can learn more on my Hire Me page.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
