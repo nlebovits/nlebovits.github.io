@@ -4,28 +4,26 @@ title: "Resume"
 
 ## Nissim Lebovits
 
-[nissim\@design.upenn.edu](nissim@design.upenn.edu) \| [LinkedIn](https://www.linkedin.com/in/nlebovits/) \| [GitHub](https://github.com/nlebovits)
+[Email](nissim@design.upenn.edu) \| [LinkedIn](https://www.linkedin.com/in/nlebovits/) \| [GitHub](https://github.com/nlebovits)
 
 Master's student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia.
 
 ## Education
 
-**Master's in City Planning**\
+#### Master's in City Planning
 University of Pennsylvania\
 Expected 2024\
 
-- [2024 Witte-Sakamoto Family Prize in City Planning](https://awards.design.upenn.edu/winner/nissim-lebovits-mcp24)
-- [Perry World House Graduate Associate](https://global.upenn.edu/perryworldhouse/news/meet-our-2023-24-perry-world-house-graduate-associates)
+[2024 Witte-Sakamoto Family Prize in City Planning](https://awards.design.upenn.edu/winner/nissim-lebovits-mcp24)\
+[Perry World House Graduate Associate](https://global.upenn.edu/perryworldhouse/news/meet-our-2023-24-perry-world-house-graduate-associates)
 
-*Relevant Courses: Raster GIS, Land Use Planning, Environmental Planning, Spatial Statistics, Geospatial Machine Learning (Remote Sensing)*
-
-**Bachelor of Arts in History**\
+#### Bachelor of Arts in History
 Vanderbilt University\
 May 2020
 
 ## Relevant Experience
 
-**University of Pennsylvania**\
+#### University of Pennsylvania
 August 2022 - Present\
 *Research Assistant*
 
@@ -41,7 +39,7 @@ With Prof. Matthijs Bouw:
 - Developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.
 
 
-**Code for Philly**\
+#### Code for Philly
 July 2023 - Present\
 *Project Lead*
 
@@ -52,7 +50,7 @@ July 2023 - Present\
 - Recruited and onboarded volunteers for the project while also canvassing potential funders to ensure the long-term viability of the project. 
 - Developed technical and practical project documentation to facilitate new volunteer contributions and ensure long-term project viability.
 
-**Office of Community Empowerment and Opportunity, City of Philadelphia**\
+#### Office of Community Empowerment & Opportunity, City of Philadelphia
 July 2021 -- July 2022\
 *Data and Evaluation VISTA*
 
@@ -64,4 +62,5 @@ July 2021 -- July 2022\
 
 Data Analysis: R, Python, Google Earth Engine, SQL, ArcGIS\
 Data Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\
+Soft skills: Project leadership, communication, research\
 Languages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)

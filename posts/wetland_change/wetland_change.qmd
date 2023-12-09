@@ -1,8 +1,7 @@
 ---
 title: "Wetland Change in Argentina"
-date: 11-2-2023 
-author: Nissim Lebovits
-categories: [geospatial, land cover change, remote sensing, google earth engine, machine learning, global south]
+date: 11-2-2023
+categories: [land cover change, remote sensing, google earth engine, machine learning, global south]
 ---
 
 I used **Google Earth Engine** and global wetlands datasets to train a **Random Forest** model on **Landsat 7 spectral images** and assess **wetlands change** from **2000 to 2020**.

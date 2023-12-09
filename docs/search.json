@@ -1,59 +1,10 @@
 [
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nissim Lebovits",
     "section": "",
-    "text": "nissim@design.upenn.edu | LinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia."
-  },
-  {
-    "objectID": "resume.html#nissim-lebovits",
-    "href": "resume.html#nissim-lebovits",
-    "title": "Resume",
-    "section": "",
-    "text": "nissim@design.upenn.edu | LinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Resume",
-    "section": "Education",
-    "text": "Education\nMaster’s in City Planning\nUniversity of Pennsylvania\nExpected 2024\n\n\n2024 Witte-Sakamoto Family Prize in City Planning\nPerry World House Graduate Associate\n\nRelevant Courses: Raster GIS, Land Use Planning, Environmental Planning, Spatial Statistics, Geospatial Machine Learning (Remote Sensing)\nBachelor of Arts in History\nVanderbilt University\nMay 2020"
-  },
-  {
-    "objectID": "resume.html#relevant-experience",
-    "href": "resume.html#relevant-experience",
-    "title": "Resume",
-    "section": "Relevant Experience",
-    "text": "Relevant Experience\nUniversity of Pennsylvania\nAugust 2022 - Present\nResearch Assistant\nWith Prof. Allison Lassiter:\n\nEstablished new applications of statistical clustering techniques such as Gaussian mixture modeling and k-means clustering to quantify the potential vulnerability of public drinking water suppliers in U.S. coastal communities to climate change.\nExplored more than 100 scientific papers in order to develop a robust approach to characterizing water supplier vulnerability.\nIdentified, researched, and integrated more than 15 geospatial datasets on socioeconomic, infrastructural, and climatic vulnerability factors drawn primarily from U.S. federal data sources like EPA, FEMA, NOAA, and USGS.\nCreated reproducible workflows in Python, R, and ArcGIS for data manipulation, analysis, and visualization.\n\nWith Prof. Matthijs Bouw:\n\nDeveloping a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.\n\nCode for Philly\nJuly 2023 - Present\nProject Lead\n\nLed the development of an innovative, open-source data dashboard, based on previous work of mine, which leverages public data to assist community organizations in prioritizing vacant and abandoned properties for anti-gun violence interventions.\nRapidly assimilated and synthesized diverse information and skills related to policy, law, spatial statistics, and web development in order to integrate it into the project and convey it to team members.\nCoordinated a team of more than 10 designers, developers, analysts, and policy experts, ensuring that all team members understood the project goals, the relevant technical information, and their own responsibilities.\nOrganized and facilitated more than 50 meetings with key stakeholders in government, academia, and local community organizations in order to ensure alignment with community needs.\nRecruited and onboarded volunteers for the project while also canvassing potential funders to ensure the long-term viability of the project.\nDeveloped technical and practical project documentation to facilitate new volunteer contributions and ensure long-term project viability.\n\nOffice of Community Empowerment and Opportunity, City of Philadelphia\nJuly 2021 – July 2022\nData and Evaluation VISTA\n\nSpearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.\nEstablished and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.\nDeveloped new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps."
-  },
-  {
-    "objectID": "resume.html#skills",
-    "href": "resume.html#skills",
-    "title": "Resume",
-    "section": "Skills",
-    "text": "Skills\nData Analysis: R, Python, Google Earth Engine, SQL, ArcGIS\nData Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\nLanguages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)"
-  },
-  {
-    "objectID": "posts/wetland_change/wetland_change.html",
-    "href": "posts/wetland_change/wetland_change.html",
-    "title": "Wetland Change in Argentina",
-    "section": "",
-    "text": "I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nI put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk."
-  },
-  {
-    "objectID": "posts/upzoning/index.html",
-    "href": "posts/upzoning/index.html",
-    "title": "Identifying Upzoning Opportunities",
-    "section": "",
-    "text": "https://nlebovits.github.io/musa-508-2023-final/"
-  },
-  {
-    "objectID": "posts/illegal_dumping/index.html",
-    "href": "posts/illegal_dumping/index.html",
-    "title": "Predicting Illegal Dumping",
-    "section": "",
-    "text": "https://rpubs.com/nlebovits/musa-508-hw-3\nIllegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. Due to various causes, under-reporting of dumping issues in certain areas likely leads to selection bias. Below, we attempt to implement two Poisson regression-based predictive models to mitigate this selection bias. One of these models incorporates spatial process into its data in the form of spatial lag while the other does not. Both models are evaluated using regular 100-fold cross validation and leave one location out spatial cross validation. Finally, we compare the results to the accuracy of a traditional kernel density estimate-based hotspot prediction. We find that:\nincorporating spatial process into the model substantially improved its performance,\n\nspatial cross-validation reveals that random k-fold cross validation is meaningfully over-optimistic in its evaluation of predictions,\n\nour model does not generalize well across neighborhoods or racial contexts,\n\nour model does not meaningfully improve over a more traditional kernel density estimate prediction approach,\n\nand finally, our model is highly sensitive to input conditions such as cell size and classification breaks.\nAs a result, we do not recommend that this algorithm be put into production.\nAbove, we evaluated the effectiveness of a Poisson regression in predicting illegal dumping across Philadelphia. We assessed the utility of incorporating spatial process into our dataset and compared the merits of random k-fold cross validation versus spatial cross validation at the neighborhood level. We evaluated the accuracy and generalizability of all models and found that the model that incorporated spatial process meaningfully outperformed the model that did not. However, spatial cross-validation revealed that the model does not generalize well across neighborhoods. Furthermore, we found that it does not generalize well across racial contexts. Lastly, we compared the model to a more traditional hotspot prediction approach using a kernel density estimate and found that it did not offer much in the way of improvement.\nAs a result of these findings, we do not recommend that this model be put into production. Given its limited accuracy and generalizability, especially compared to simpler approaches such as a KDE, it is not worth the effort invested. We found, furthermore, that it is highly sensitive to input parameters such as the cell size of the hexagon grid, or the class breaks used to define risk classes for prediction (quantile breaks were more effective at capturing risk than Jenks breaks, despite the skewed distribution of dumping complaints). In the course of our work, we found that other models, such as a regression tree, spatial lag regression, or geographically weighted regression, performed better and may be preferrable, too. In sum, given the sensitivity of the model to input parameters and its limited improvement over simpler approaches, we do not recommend using it."
+    "text": "I’m a master’s student in city planning at the University of Pennsylvania’s Weitzman School of Design, where I focus on environmental planning and spatial analysis.\nCurrently, I work as a research assistant for Professor Allison Lassiter, with whom I’m building a clustering model to identify vulnerable U.S. community drinking water systems. I also work for Professor Matthijs Bouw on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in R and Python, as well as JavaScript and ArcGIS. Recently, I’ve been using Google Earth Engine for machine learning applications.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately.\nIn 2021, I spent a year as an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the West Philadelphia Promise Zone. Before that, I was managing editor for Symposem Magazine, and before that, I studied history at Vanderbilt University."
   },
   {
     "objectID": "posts/dashboard/index.html",
@@ -77,18 +28,18 @@
     "text": "Since the summer of 2022, I have research and designed iterations of a dashboard that will help community groups identify, get access to, and intervene in vacant properties associated with the highest rates of gun crime. For a raster GIS class, I built a first iteration as an ArcGIS Storymap. Later, I put together a functional dashboard prototype using JavaScript and Quarto.\nSince July of 2023, I’ve been leading a Code for Philly civic tech project to build and deploy a fully functional version of the tool. The project is supported by the Center for Philadelphia’s Urban Future and I am currently assembling a steering committee to guide the project’s long-term development and maintainence.\nTwo of the key advantages of working with Code for Philly has been collaborataoring with professional designers and developers. Clean & Green Philly is supported by several volunteer UX designers, web developers, and data analysts who have helped me translate the broad idea of the project and my rough prototypes into a fleshed-out product designed to meet the needs of stakeholders in grassroots organizations, advocacy groups, and local government."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nissim Lebovits",
-    "section": "",
-    "text": "I’m a master’s student in city planning at the University of Pennsylvania’s Weitzman School of Design, where I focus on environmental planning and spatial analysis.\nCurrently, I work as a research assistant for Professor Allison Lassiter, with whom I’m building a clustering model to identify vulnerable U.S. community drinking water systems. I also work for Professor Matthijs Bouw on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in R and Python, as well as JavaScript and ArcGIS. Recently, I’ve been using Google Earth Engine for machine learning applications.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately.\nIn 2021, I spent a year as an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the West Philadelphia Promise Zone. Before that, I was managing editor for Symposem Magazine, and before that, I studied history at Vanderbilt University."
-  },
-  {
     "objectID": "posts/ebird/index.html",
     "href": "posts/ebird/index.html",
     "title": "Sea Level Rise Threat to Biodiversity",
     "section": "",
     "text": "In this project, I explore the potential of using publicly available citizen science data from eBird to asses the threat of sea level rise to bird biodiversity in Philadelphia. Specifically, the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden are identified as areas facing a particularly high threat by sea level rise to biodiversity. Future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.\nhttps://rpubs.com/nlebovits/birds-slr-phl"
+  },
+  {
+    "objectID": "posts/illegal_dumping/index.html",
+    "href": "posts/illegal_dumping/index.html",
+    "title": "Predicting Illegal Dumping",
+    "section": "",
+    "text": "https://rpubs.com/nlebovits/musa-508-hw-3\nIllegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. Due to various causes, under-reporting of dumping issues in certain areas likely leads to selection bias. Below, we attempt to implement two Poisson regression-based predictive models to mitigate this selection bias. One of these models incorporates spatial process into its data in the form of spatial lag while the other does not. Both models are evaluated using regular 100-fold cross validation and leave one location out spatial cross validation. Finally, we compare the results to the accuracy of a traditional kernel density estimate-based hotspot prediction. We find that:\nincorporating spatial process into the model substantially improved its performance,\n\nspatial cross-validation reveals that random k-fold cross validation is meaningfully over-optimistic in its evaluation of predictions,\n\nour model does not generalize well across neighborhoods or racial contexts,\n\nour model does not meaningfully improve over a more traditional kernel density estimate prediction approach,\n\nand finally, our model is highly sensitive to input conditions such as cell size and classification breaks.\nAs a result, we do not recommend that this algorithm be put into production.\nAbove, we evaluated the effectiveness of a Poisson regression in predicting illegal dumping across Philadelphia. We assessed the utility of incorporating spatial process into our dataset and compared the merits of random k-fold cross validation versus spatial cross validation at the neighborhood level. We evaluated the accuracy and generalizability of all models and found that the model that incorporated spatial process meaningfully outperformed the model that did not. However, spatial cross-validation revealed that the model does not generalize well across neighborhoods. Furthermore, we found that it does not generalize well across racial contexts. Lastly, we compared the model to a more traditional hotspot prediction approach using a kernel density estimate and found that it did not offer much in the way of improvement.\nAs a result of these findings, we do not recommend that this model be put into production. Given its limited accuracy and generalizability, especially compared to simpler approaches such as a KDE, it is not worth the effort invested. We found, furthermore, that it is highly sensitive to input parameters such as the cell size of the hexagon grid, or the class breaks used to define risk classes for prediction (quantile breaks were more effective at capturing risk than Jenks breaks, despite the skewed distribution of dumping complaints). In the course of our work, we found that other models, such as a regression tree, spatial lag regression, or geographically weighted regression, performed better and may be preferrable, too. In sum, given the sensitivity of the model to input parameters and its limited improvement over simpler approaches, we do not recommend using it."
   },
   {
     "objectID": "posts/illegal_dumping_dashboard/index.html",
@@ -98,6 +49,13 @@
     "text": "https://rpubs.com/nlebovits/phl-illegal-dumping"
   },
   {
+    "objectID": "posts/upzoning/index.html",
+    "href": "posts/upzoning/index.html",
+    "title": "Identifying Upzoning Opportunities",
+    "section": "",
+    "text": "https://nlebovits.github.io/musa-508-2023-final/"
+  },
+  {
     "objectID": "posts/water_suppliers/index.html",
     "href": "posts/water_suppliers/index.html",
     "title": "Identifying Vulnerable Water Suppliers",
@@ -105,10 +63,52 @@
     "text": "In this post, I will analyse the TidyTuesday dataset about Retail Sales .."
   },
   {
+    "objectID": "posts/wetland_change/wetland_change.html",
+    "href": "posts/wetland_change/wetland_change.html",
+    "title": "Wetland Change in Argentina",
+    "section": "",
+    "text": "I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nI put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk."
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "My Work",
     "section": "",
-    "text": "Clean & Green Philly\n\n\n\n\n\n\n\nurban\n\n\ncivic tech\n\n\nopen source\n\n\nenvironment\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying Upzoning Opportunities\n\n\n\n\n\n\n\ngeospatial\n\n\nurban\n\n\nprediction\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSea Level Rise Threat to Biodiversity\n\n\n\n\n\n\n\ngeospatial\n\n\nopen data\n\n\nbiodiversity\n\n\nurban\n\n\nsea level rise\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\nNissim Lebovits\n\n\n\n\n\n\n  \n\n\n\n\nWetland Change in Argentina\n\n\n\n\n\n\n\ngeospatial\n\n\nland cover change\n\n\nremote sensing\n\n\ngoogle earth engine\n\n\nmachine learning\n\n\nglobal south\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\nNissim Lebovits\n\n\n\n\n\n\n  \n\n\n\n\nPredicting Illegal Dumping\n\n\n\n\n\n\n\ngeospatial\n\n\nurban\n\n\nprediction\n\n\nenvironment\n\n\npublic health\n\n\n\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying Vulnerable Water Suppliers\n\n\n\n\n\n\n\ngeospatial\n\n\nclustering\n\n\nclimate\n\n\nequity\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nIllegal Dumping Live Dashboard\n\n\n\n\n\n\n\ngeospatial\n\n\nopen data\n\n\nurban\n\n\npublic health\n\n\ndashboard\n\n\n\n\n\n\n\n\n\n\n\nDec 2, 2022\n\n\nNissim Lebovits\n\n\n\n\n\n\nNo matching items"
+    "text": "Clean & Green Philly\n\n\n\n\n\n\n\nurban\n\n\ncivic tech\n\n\nclimate/environment\n\n\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying Upzoning Opportunities\n\n\n\n\n\n\n\nurban\n\n\nprediction\n\n\nmachine learning\n\n\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSea Level Rise Threat to Biodiversity\n\n\n\n\n\n\n\nbiodiversity\n\n\nurban\n\n\nsea level rise\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nWetland Change in Argentina\n\n\n\n\n\n\n\nland cover change\n\n\nremote sensing\n\n\ngoogle earth engine\n\n\nmachine learning\n\n\nglobal south\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPredicting Illegal Dumping\n\n\n\n\n\n\n\nurban\n\n\nprediction\n\n\nclimate/environment\n\n\npublic health\n\n\n\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\n\n\n\n\n  \n\n\n\n\nIdentifying Vulnerable Water Suppliers\n\n\n\n\n\n\n\nclustering\n\n\nclimate/environment\n\n\nequity\n\n\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n  \n\n\n\n\nIllegal Dumping Live Dashboard\n\n\n\n\n\n\n\nurban\n\n\npublic health\n\n\ndashboard\n\n\n\n\n\n\n\n\n\n\n\nDec 2, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Email | LinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia."
+  },
+  {
+    "objectID": "resume.html#nissim-lebovits",
+    "href": "resume.html#nissim-lebovits",
+    "title": "Resume",
+    "section": "",
+    "text": "Email | LinkedIn | GitHub\nMaster’s student in city planning at the University of Pennsylvania. Civic tech project lead for Clean & Green Philly. Using data to foster civic engagement and build more sustainable, inclusive cities. Strong leadership and communication skills. Experienced in Python, R, and ArcGIS. Previously an AmeriCorps VISTA with the City of Philadelphia."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "Education",
+    "text": "Education\n\nMaster’s in City Planning\nUniversity of Pennsylvania\nExpected 2024\n\n2024 Witte-Sakamoto Family Prize in City Planning\nPerry World House Graduate Associate\n\n\nBachelor of Arts in History\nVanderbilt University\nMay 2020"
+  },
+  {
+    "objectID": "resume.html#relevant-experience",
+    "href": "resume.html#relevant-experience",
+    "title": "Resume",
+    "section": "Relevant Experience",
+    "text": "Relevant Experience\n\nUniversity of Pennsylvania\nAugust 2022 - Present\nResearch Assistant\nWith Prof. Allison Lassiter:\n\nEstablished new applications of statistical clustering techniques such as Gaussian mixture modeling and k-means clustering to quantify the potential vulnerability of public drinking water suppliers in U.S. coastal communities to climate change.\nExplored more than 100 scientific papers in order to develop a robust approach to characterizing water supplier vulnerability.\nIdentified, researched, and integrated more than 15 geospatial datasets on socioeconomic, infrastructural, and climatic vulnerability factors drawn primarily from U.S. federal data sources like EPA, FEMA, NOAA, and USGS.\nCreated reproducible workflows in Python, R, and ArcGIS for data manipulation, analysis, and visualization.\n\nWith Prof. Matthijs Bouw:\n\nDeveloping a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.\n\n\n\nCode for Philly\nJuly 2023 - Present\nProject Lead\n\nLed the development of an innovative, open-source data dashboard, based on previous work of mine, which leverages public data to assist community organizations in prioritizing vacant and abandoned properties for anti-gun violence interventions.\nRapidly assimilated and synthesized diverse information and skills related to policy, law, spatial statistics, and web development in order to integrate it into the project and convey it to team members.\nCoordinated a team of more than 10 designers, developers, analysts, and policy experts, ensuring that all team members understood the project goals, the relevant technical information, and their own responsibilities.\nOrganized and facilitated more than 50 meetings with key stakeholders in government, academia, and local community organizations in order to ensure alignment with community needs.\nRecruited and onboarded volunteers for the project while also canvassing potential funders to ensure the long-term viability of the project.\nDeveloped technical and practical project documentation to facilitate new volunteer contributions and ensure long-term project viability.\n\n\n\nOffice of Community Empowerment & Opportunity, City of Philadelphia\nJuly 2021 – July 2022\nData and Evaluation VISTA\n\nSpearheaded reproducible data collection and analysis efforts for the West Philadelphia Promise Zone using R and ArcGIS Pro.\nEstablished and coordinated regular data meetings with key stakeholders in other City agencies, the federal Department of Housing and Urban Development, and Drexel University.\nDeveloped new data collection and distribution tools for the Promise Zone, including interactive reports and dashboards in RMarkdown and ArcGIS StoryMaps."
+  },
+  {
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "Skills",
+    "text": "Skills\nData Analysis: R, Python, Google Earth Engine, SQL, ArcGIS\nData Visualization: JavaScript, Adobe Illustrator, InDesign, and Photoshop\nSoft skills: Project leadership, communication, research\nLanguages: English (native), Spanish (fluent), Hebrew (intermediate), French (intermediate)"
   }
 ]

@@ -1,8 +1,7 @@
 ---
 title: "Sea Level Rise Threat to Biodiversity"
 date: 11-2-2023 
-author: Nissim Lebovits
-categories: [geospatial, open data, biodiversity, urban, sea level rise]
+categories: [biodiversity, urban, sea level rise]
 image: "hotspots.png"
 ---
 

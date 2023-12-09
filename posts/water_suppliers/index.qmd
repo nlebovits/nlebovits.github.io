@@ -1,7 +1,7 @@
 ---
 title: "Identifying Vulnerable Water Suppliers"
 date: 01-2-2023 
-categories: [geospatial, clustering, climate, equity]
+categories: [clustering, climate/environment, equity]
 image: "costa_rica_slope.png"
 ---
   

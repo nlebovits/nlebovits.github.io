@@ -1,7 +1,7 @@
 ---
 title: "Clean & Green Philly"
 date: 01-1-2024
-categories: [urban, civic tech, open source, environment]
+categories: [urban, civic tech, climate/environment]
 image: "https://github.com/CodeForPhilly/vacant-lots-proj/assets/111617674/8cbf0b06-b299-49cd-8f9f-bbb714e55b44"
 ---
 
