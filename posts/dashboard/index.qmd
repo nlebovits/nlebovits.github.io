@@ -2,16 +2,14 @@
 title: "Clean & Green Philly"
 date: 01-1-2024
 categories: [urban, civic tech, climate/environment]
-image: "https://github.com/CodeForPhilly/vacant-lots-proj/assets/111617674/8cbf0b06-b299-49cd-8f9f-bbb714e55b44"
+image: "figma_dashboard_map.png"
 ---
 
 # Clean & Green Philly
 
 Philadelphia has a gun violence problem. I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact.
 
-![User prototype landing page](https://github.com/CodeForPhilly/vacant-lots-proj/assets/111617674/0776acde-9fe0-42a5-b8ab-6680525a31d7)
-
-![User prototype map](https://github.com/CodeForPhilly/vacant-lots-proj/assets/111617674/8cbf0b06-b299-49cd-8f9f-bbb714e55b44)
+![User prototype map](figma_dashboard_map.png)
 
 ## Context
 

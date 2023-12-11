@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2023-12-11">
 
-<title>Flood Prediction | Nissim Lebovits</title>
+<title>Flood Prediction for Costa Rica | Nissim Lebovits</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,9 +57,11 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -118,14 +120,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-and-model" id="toc-data-and-model" class="nav-link" data-scroll-target="#data-and-model">Data and Model</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">Future Directions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Flood Prediction</h1>
+<h1 class="title">Flood Prediction for Costa Rica</h1>
   <div class="quarto-categories">
     <div class="quarto-category">flooding</div>
     <div class="quarto-category">remote sensing</div>
@@ -153,8 +163,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="costa_rica_flood_probabilities.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A raster map of flood probabilities across Costa Rica</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-and-model" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-model">Data and Model</h2>
+<p>This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
+</section>
+<section id="future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
+<p>Going forward, I plan to integrate Google Earth Engine with the <code>tensorflow</code> library in Python to develop a deep learning model. This will require me to create more robust training data and develop a more sophisticated, cloud-based workflow, but the the tradeoff will be that the model should be more precise.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -393,12 +421,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© 2023 Nissim Lebovits ∙ Made with <a href="https://quarto.org">Quarto</a></div>   
+    <div class="nav-footer-left">Powered by <a href="https://quarto.org">Quarto</a></div>   
     <div class="nav-footer-center"><a href="mailto:nissim@design.upenn.edu">Contact Me</a></div>
-    <div class="nav-footer-right"><a href="https://github.com/nlebovits">Check out my Github</a></div>
+    <div class="nav-footer-right">© 2023 Nissim Lebovits</div>
   </div>
 </footer>
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

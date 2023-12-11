@@ -1,7 +1,17 @@
 ---
-title: "Flood Prediction"
+title: "Flood Prediction for Costa Rica"
 date: 12-11-2023
 categories: [flooding, remote sensing, google earth engine, machine learning, global south]
 image: "costa_rica_flood_probabilities.png"
 ---
 
+## Overview
+I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.
+
+![A raster map of flood probabilities across Costa Rica](costa_rica_flood_probabilities.png)
+
+## Data and Model
+This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.
+
+## Future Directions
+Going forward, I plan to integrate Google Earth Engine with the `tensorflow` library in Python to develop a deep learning model. This will require me to create more robust training data and develop a more sophisticated, cloud-based workflow, but the the tradeoff will be that the model should be more precise.

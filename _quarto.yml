@@ -19,14 +19,15 @@ website:
   search: 
     location: navbar
     type: overlay
+  page-navigation: true
       
   page-footer:
     center: |
       [Contact Me](mailto:nissim@design.upenn.edu)
     left: |
-      &#169; 2023 Nissim Lebovits &#8729; Made with [Quarto](https://quarto.org)
+      Powered by [Quarto](https://quarto.org)
     right: |
-      [Check out my Github](https://github.com/nlebovits)
+      &#169; 2023 Nissim Lebovits
     background: "#f8f9fa"
 
 format:
@@ -36,6 +37,7 @@ format:
     css: styles.css
     toc: true
     pagetitle: "{{< meta title >}} | Nissim Lebovits"
+    smooth-scroll: true
 
 editor: source
 
