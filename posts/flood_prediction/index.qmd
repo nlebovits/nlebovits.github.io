@@ -1,0 +1,7 @@
+---
+title: "Flood Prediction"
+date: 12-11-2023
+categories: [flooding, remote sensing, google earth engine, machine learning, global south]
+image: "costa_rica_flood_probabilities.png"
+---
+
