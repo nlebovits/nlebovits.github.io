@@ -1,7 +1,7 @@
 ---
 title: "Nissim Lebovits"
-subtitle: "Cities, Climate, Data | MCP @ Wietzman School of Design"
-image: assets/profile.png
+subtitle: "Cities, Climate, Data<br>MCP @ Wietzman School of Design"
+image: assets/Lebovits_Headshot.jpg
 about:
   template: jolla
   image-width: 20em

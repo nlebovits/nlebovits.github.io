@@ -1,5 +1,57 @@
 /* css styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
 :root {
   --primary-color: #f3e6d3;
+  --link-color: #5c2751; /* Dark purple for hyperlinks */
+  --text-color: #434a42; /* Main text color */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* Light weight for body text */
+    color: var(--text-color); /* Set the text color */
+}
+
+/* Apply medium weight to headers */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; /* Medium weight for headers */
+}
+
+/* Customize hyperlink colors */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: darken(var(--link-color), 15%);
+}
+
+/* This is a generic selector; you may need to adjust it based on your site's structure */
+.subtitle, .about-subtitle {
+    text-align: center;
+    display: block;
+}
+
+/* New styles for header and footer text and icons */
+header, .navbar, footer, .page-footer {
+    color: var(--text-color); /* Apply the main text color to header and footer */
+}
+
+.navbar a, .page-footer a, .page-footer .icon, header a, header .icon {
+    color: var(--text-color); /* Ensure links and icons in header/footer use the text color */
+}
+
+/* Assuming .project-header is your header's class and .project-description for the body */
+.project-header {
+    padding-bottom: 2em; /* Adjust padding as needed */
+}
+
+.project-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Allowing up to 4 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-top: 1em; /* Adds padding between the header and this text, adjust if needed */
 }

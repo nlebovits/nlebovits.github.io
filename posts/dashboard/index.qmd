@@ -2,14 +2,42 @@
 title: "Clean & Green Philly"
 date: 01-1-2024
 categories: [urban, civic tech, climate/environment]
+engine: knitr
+freeze: false
 image: "figma_dashboard_map.png"
+poster:
+  pdf: "Lebovits_Nissim_FoC_Poster.pdf"
 ---
 
-# Clean & Green Philly
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+```
 
 Philadelphia has a gun violence problem. I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact.
 
-![User prototype map](figma_dashboard_map.png)
+```{=html}
+<!-- No changes needed for the embed-container -->
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$poster$pdf`" style="border: 2px"></iframe>
+</div>
+```
 
 ## Context
 
