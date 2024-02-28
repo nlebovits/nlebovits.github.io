@@ -11,56 +11,21 @@
     "href": "posts/dashboard/index.html",
     "title": "Clean & Green Philly",
     "section": "",
-    "text": "Philadelphia has a gun violence problem. I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact."
-  },
-  {
-    "objectID": "posts/dashboard/index.html#context",
-    "href": "posts/dashboard/index.html#context",
-    "title": "Clean & Green Philly",
-    "section": "Context",
-    "text": "Context\nHomicides in Philadelphia have been on the rise since 2013. The past three years—2020, 2021, and 2022—have been the deadliest on record, with a high of 562 homicides in 2021. Community members need solutions, but many city-run initiatives are frustratingly slow or inadequate. Nearly 80% of the city’s anti-violence spending focuses on long-term violence reduction without any clear, immediate impact.\nResearch shows that greening and cleaning vacant and abandoned parcels is one of the most impactful, cost-effective interventions available to reduce gun violence in a neighborhood. Drs. Eugenia South and Charles Branas have led several studies that demonstrate that greening vacant lots in Philadelphia reduced gun violence by as much as 29% in the surrounding area. Similarly, cleaning and lightly repairing vacant houses led a 13% drop in gun assaults compared to nearby blocks. These “greening and cleaning” interventions not only reduce gun violence but also provide other benefits, such as reducing the urban heat island effect, lowering residents’ stress levels, and contributing to lower levels of depression among residents.\nThere are roughly 40,000 vaccant properties in Philadelphia. Identifying the highest-priority vacant properties will allow community groups to invest their limited resources where they will have the biggest impact. Combining various public data, this dashboard helps users identify the properties that are ideal for them to intervene in. It also offers additional information about each property to facilitate interventions and indicates the best possible route to cleaning up the property."
-  },
-  {
-    "objectID": "posts/dashboard/index.html#my-work",
-    "href": "posts/dashboard/index.html#my-work",
-    "title": "Clean & Green Philly",
-    "section": "My Work",
-    "text": "My Work\nSince the summer of 2022, I have research and designed iterations of a dashboard that will help community groups identify, get access to, and intervene in vacant properties associated with the highest rates of gun crime. For a raster GIS class, I built a first iteration as an ArcGIS Storymap. Later, I put together a functional dashboard prototype using JavaScript and Quarto.\nSince July of 2023, I’ve been leading a Code for Philly civic tech project to build and deploy a fully functional version of the tool. The project is supported by the Center for Philadelphia’s Urban Future and I am currently assembling a steering committee to guide the project’s long-term development and maintainence.\nTwo of the key advantages of working with Code for Philly has been collaborataoring with professional designers and developers. Clean & Green Philly is supported by several volunteer UX designers, web developers, and data analysts who have helped me translate the broad idea of the project and my rough prototypes into a fleshed-out product designed to meet the needs of stakeholders in grassroots organizations, advocacy groups, and local government."
+    "text": "Philadelphia has a gun violence problem. Through Code for Philly, I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact.\nExplore the live version of the dashboard here or read more about it in the PDF below."
   },
   {
     "objectID": "posts/ebird/index.html",
     "href": "posts/ebird/index.html",
     "title": "Sea Level Rise Threat to Biodiversity",
     "section": "",
-    "text": "In this project, I explore the potential of using publicly available citizen science data from eBird to asses the threat of sea level rise to bird biodiversity in Philadelphia. Specifically, the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden are identified as areas facing a particularly high threat by sea level rise to biodiversity. Future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.\nhttps://rpubs.com/nlebovits/birds-slr-phl"
-  },
-  {
-    "objectID": "posts/flood_prediction/index.html",
-    "href": "posts/flood_prediction/index.html",
-    "title": "Flood Prediction for Costa Rica",
-    "section": "",
-    "text": "I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.\n\n\n\nA raster map of flood probabilities across Costa Rica"
+    "text": "In this project, I explore the potential of using publicly available citizen science data from eBird to asses the threat of sea level rise to bird biodiversity in Philadelphia. Specifically, the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden are identified as areas facing a particularly high threat by sea level rise to biodiversity. Future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.\nFor a floodplain management class in my first semester at Penn,"
   },
   {
     "objectID": "posts/flood_prediction/index.html#overview",
     "href": "posts/flood_prediction/index.html#overview",
     "title": "Flood Prediction for Costa Rica",
-    "section": "",
-    "text": "I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.\n\n\n\nA raster map of flood probabilities across Costa Rica"
-  },
-  {
-    "objectID": "posts/flood_prediction/index.html#data-and-model",
-    "href": "posts/flood_prediction/index.html#data-and-model",
-    "title": "Flood Prediction for Costa Rica",
-    "section": "Data and Model",
-    "text": "Data and Model\nThis work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API."
-  },
-  {
-    "objectID": "posts/flood_prediction/index.html#future-directions",
-    "href": "posts/flood_prediction/index.html#future-directions",
-    "title": "Flood Prediction for Costa Rica",
-    "section": "Future Directions",
-    "text": "Future Directions\nGoing forward, I plan to integrate Google Earth Engine with the tensorflow library in Python to develop a deep learning model. This will require me to create more robust training data and develop a more sophisticated, cloud-based workflow, but the the tradeoff will be that the model should be more precise."
+    "section": "Overview",
+    "text": "Overview\nAs part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.\n ## Data and Model This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.\n\n\n \n\n  \n    \n      Powered by [Quarto](https://quarto.org)\n  \n       \n    \n      [Contact Me](mailto:nissim@design.upenn.edu)\n  \n    \n    \n      © 2023 Nissim Lebovits"
   },
   {
     "objectID": "posts/illegal_dumping/index.html",
@@ -70,18 +35,11 @@
     "text": "https://rpubs.com/nlebovits/musa-508-hw-3\nIllegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. Due to various causes, under-reporting of dumping issues in certain areas likely leads to selection bias. Below, we attempt to implement two Poisson regression-based predictive models to mitigate this selection bias. One of these models incorporates spatial process into its data in the form of spatial lag while the other does not. Both models are evaluated using regular 100-fold cross validation and leave one location out spatial cross validation. Finally, we compare the results to the accuracy of a traditional kernel density estimate-based hotspot prediction. We find that:\nincorporating spatial process into the model substantially improved its performance,\n\nspatial cross-validation reveals that random k-fold cross validation is meaningfully over-optimistic in its evaluation of predictions,\n\nour model does not generalize well across neighborhoods or racial contexts,\n\nour model does not meaningfully improve over a more traditional kernel density estimate prediction approach,\n\nand finally, our model is highly sensitive to input conditions such as cell size and classification breaks.\nAs a result, we do not recommend that this algorithm be put into production.\nAbove, we evaluated the effectiveness of a Poisson regression in predicting illegal dumping across Philadelphia. We assessed the utility of incorporating spatial process into our dataset and compared the merits of random k-fold cross validation versus spatial cross validation at the neighborhood level. We evaluated the accuracy and generalizability of all models and found that the model that incorporated spatial process meaningfully outperformed the model that did not. However, spatial cross-validation revealed that the model does not generalize well across neighborhoods. Furthermore, we found that it does not generalize well across racial contexts. Lastly, we compared the model to a more traditional hotspot prediction approach using a kernel density estimate and found that it did not offer much in the way of improvement.\nAs a result of these findings, we do not recommend that this model be put into production. Given its limited accuracy and generalizability, especially compared to simpler approaches such as a KDE, it is not worth the effort invested. We found, furthermore, that it is highly sensitive to input parameters such as the cell size of the hexagon grid, or the class breaks used to define risk classes for prediction (quantile breaks were more effective at capturing risk than Jenks breaks, despite the skewed distribution of dumping complaints). In the course of our work, we found that other models, such as a regression tree, spatial lag regression, or geographically weighted regression, performed better and may be preferrable, too. In sum, given the sensitivity of the model to input parameters and its limited improvement over simpler approaches, we do not recommend using it."
   },
   {
-    "objectID": "posts/illegal_dumping_dashboard/index.html",
-    "href": "posts/illegal_dumping_dashboard/index.html",
-    "title": "Illegal Dumping Live Dashboard",
-    "section": "",
-    "text": "https://rpubs.com/nlebovits/phl-illegal-dumping"
-  },
-  {
     "objectID": "posts/upzoning/index.html",
     "href": "posts/upzoning/index.html",
     "title": "Identifying Upzoning Opportunities",
     "section": "",
-    "text": "https://nlebovits.github.io/musa-508-2023-final/"
+    "text": "For a “Public Policy Analytics” class at Penn, Laura Frances and I analyzed conflicts between anticipated and current zoning. Using a random forest model trained on historic Philadelphia construction permits, we identified areas of the city with restrictive zoning that would potentially hinder anticipated residential development. We then considered how the model could be used to inform efforts at zoning reform and more strategic planning meant to alleviate issues of housing affordability across Philadelphia."
   },
   {
     "objectID": "posts/water_suppliers/index.html",
@@ -95,7 +53,7 @@
     "href": "posts/wetland_change/index.html",
     "title": "Wetland Change in Argentina",
     "section": "",
-    "text": "I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nI put together a Python script in Google Colab, which is available with references here: https://lnkd.in/eNXq-QWg. I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here: https://lnkd.in/eTsXvyMk."
+    "text": "For an independent study in applications of remote sensing for sustainable urban planning, I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nHere, you can see my code in Google Colab:\n\n\n\nAdditionally, for a wetland ecology class, I put together a presentation on how remote sensing is used for wetland monitoring:\nI also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here:"
   },
   {
     "objectID": "projects.html",

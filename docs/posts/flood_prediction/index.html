@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-12-11">
 
-<title>Flood Prediction for Costa Rica | Nissim Lebovits</title>
+<title>Nissim Lebovits – Flood Prediction for Costa Rica | Nissim Lebovits</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -124,8 +124,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#data-and-model" id="toc-data-and-model" class="nav-link" data-scroll-target="#data-and-model">Data and Model</a></li>
-  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">Future Directions</a></li>
   </ul>
 </nav>
     </div>
@@ -162,29 +160,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="cell">
+<style type="text/css">
+.embed-container {
+    position: relative;
+    padding-bottom: 150%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-top: 1px solid #434a42; /* Thin line added at the top */
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+</div>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="costa_rica_flood_probabilities.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">A raster map of flood probabilities across Costa Rica</figcaption>
-</figure>
+<p>As part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.</p>
+<p><img src="costa_rica_flood_probabilities.png" class="img-fluid" alt="A raster map of flood probabilities across Costa Rica"> ## Data and Model This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
+<div class="embed-container">
+<script src="https://gist.github.com/nlebovits/224359fc03ccf1cd4c5deb57067a4cec.js" style="border: 2px></script>
 </div>
-</section>
-<section id="data-and-model" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-model">Data and Model</h2>
-<p>This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
-</section>
-<section id="future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
-<p>Going forward, I plan to integrate Google Earth Engine with the <code>tensorflow</code> library in Python to develop a deep learning model. This will require me to create more robust training data and develop a more sophisticated, cloud-based workflow, but the the tradeoff will be that the model should be more precise.</p>
-
-
+<div id=" quarto-navigation-envelope"="" class="hidden">
+<p><span class="hidden" data-render-id="quarto-int-sidebar-title">Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-int-navbar-title">Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-int-navbar:Home">Home</span> <span class="hidden" data-render-id="quarto-int-navbar:/index.html">/index.html</span> <span class="hidden" data-render-id="quarto-int-navbar:My Work">My Work</span> <span class="hidden" data-render-id="quarto-int-navbar:/projects.html">/projects.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Resume">Resume</span> <span class="hidden" data-render-id="quarto-int-navbar:/resume.html">/resume.html</span> <span class="hidden" data-render-id="quarto-int-navbar:https://www.linkedin.com/in/nlebovits/">https://www.linkedin.com/in/nlebovits/</span> <span class="hidden" data-render-id="quarto-int-navbar:https://github.com/nlebovits/">https://github.com/nlebovits/</span> <span class="hidden" data-render-id="footer-left">Powered by <a href="https://quarto.org">Quarto</a></span> <span class="hidden" data-render-id="footer-center"><a href="mailto:nissim@design.upenn.edu">Contact Me</a></span> <span class="hidden" data-render-id="footer-right">© 2023 Nissim Lebovits</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden" data-render-id="quarto-metatitle">Flood Prediction for Costa Rica | Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-twittercardtitle">Flood Prediction for Costa Rica | Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-ogcardtitle">Flood Prediction for Costa Rica | Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-metasitename">Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
+</div>
 </section>
 
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script id = "quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -420,13 +435,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Powered by <a href="https://quarto.org">Quarto</a></div>   
-    <div class="nav-footer-center"><a href="mailto:nissim@design.upenn.edu">Contact Me</a></div>
-    <div class="nav-footer-right">© 2023 Nissim Lebovits</div>
+    <div class="nav-footer-left">
+      <div class="footer-contents">Powered by [Quarto](https://quarto.org)
+</div>  
+    </div>   
+    <div class="nav-footer-center">
+      <div class="footer-contents">[Contact Me](mailto:nissim@design.upenn.edu)
+</div>  
+    </div>
+    <div class="nav-footer-right">
+      <div class="footer-contents">© 2023 Nissim Lebovits
+</div>  
+    </div>
   </div>
 </footer>
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</section></main></div><script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

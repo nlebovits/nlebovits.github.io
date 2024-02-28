@@ -12,7 +12,7 @@ poster:
 ```{css echo=FALSE}
 .embed-container {
     position: relative;
-    padding-bottom: 129%;
+    padding-bottom: 150%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -30,7 +30,9 @@ poster:
 
 ```
 
-Philadelphia has a gun violence problem. I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact.
+Philadelphia has a gun violence problem. Through Code for Philly, I am leading [a civic tech project](https://github.com/CodeForPhilly/vacant-lots-proj) that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact.
+
+Explore [the live version of the dashboard here](https://www.cleanandgreenphilly.org/) or read more about it in the PDF below.
 
 ```{=html}
 <!-- No changes needed for the embed-container -->
@@ -38,21 +40,3 @@ Philadelphia has a gun violence problem. I am leading a civic tech project that 
   <iframe src="`r rmarkdown::metadata$poster$pdf`" style="border: 2px"></iframe>
 </div>
 ```
-
-## Context
-
-Homicides in Philadelphia have been on the rise since 2013. The past three years---2020, 2021, and 2022---have been the deadliest on record, with a high of 562 homicides in 2021. Community members need solutions, but many city-run initiatives are frustratingly slow or inadequate. Nearly 80% of the city's anti-violence spending focuses on long-term violence reduction without any clear, immediate impact.
-
-Research shows that greening and cleaning vacant and abandoned parcels is one of the most impactful, cost-effective interventions available to reduce gun violence in a neighborhood. Drs. Eugenia South and Charles Branas have led several studies that [demonstrate that greening vacant lots in Philadelphia reduced gun violence by as much as 29% in the surrounding area](https://www.pnas.org/doi/10.1073/pnas.1718503115). Similarly, cleaning and lightly repairing vacant houses led a 13% drop in gun assaults compared to nearby blocks. These "greening and cleaning" interventions not only reduce gun violence but also provide other benefits, such as reducing the urban heat island effect, lowering residents' stress levels, and contributing to lower levels of depression among residents.
-
-There are roughly 40,000 vaccant properties in Philadelphia. Identifying the highest-priority vacant properties will allow community groups to invest their limited resources where they will have the biggest impact. Combining various public data, this dashboard helps users identify the properties that are ideal for them to intervene in. It also offers additional information about each property to facilitate interventions and indicates the best possible route to cleaning up the property.
-
-## My Work
-
-Since the summer of 2022, I have research and designed iterations of a dashboard that will help community groups identify, get access to, and intervene in vacant properties associated with the highest rates of gun crime. For a raster GIS class, I built a [first iteration as an ArcGIS Storymap](https://storymaps.arcgis.com/stories/551f77d85a584705b97c41db7711ba1b). Later, I put together [a functional dashboard prototype](https://nlebovits.github.io/dashboard_demo_website/more_info.html) using JavaScript and Quarto. 
-
-Since July of 2023, I've been leading [a Code for Philly civic tech project](https://github.com/CodeForPhilly/vacant-lots-proj) to build and deploy [a fully functional version of the tool](https://vacant-lots-proj.vercel.app/). The project is supported by the Center for Philadelphia's Urban Future and I am currently assembling a steering committee to guide the project's long-term development and maintainence.
-
-Two of the key advantages of working with Code for Philly has been collaborataoring with professional designers and developers. Clean & Green Philly is supported by several volunteer UX designers, web developers, and data analysts who have helped me translate the broad idea of the project and my rough prototypes into a fleshed-out product designed to meet the needs of stakeholders in grassroots organizations, advocacy groups, and local government.
-
-

@@ -2,16 +2,42 @@
 title: "Flood Prediction for Costa Rica"
 date: 12-11-2023
 categories: [flooding, remote sensing, google earth engine, machine learning, global south]
+engine: knitr
+freeze: false
 image: "costa_rica_flood_probabilities.png"
 ---
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 150%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-top: 1px solid #434a42; /* Thin line added at the top */
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
 
 ## Overview
-I am developing a methodology to predict urban flooding probabilities using open source remote sensing data and deep learning models in Google Earth Engine. This work will inform a UN-Habitat initiative to help urban planners mitigate biodiversity loss due to urban and agricultural expansion.
+As part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.
 
 ![A raster map of flood probabilities across Costa Rica](costa_rica_flood_probabilities.png)
 
 ## Data and Model
 This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.
 
-## Future Directions
-Going forward, I plan to integrate Google Earth Engine with the `tensorflow` library in Python to develop a deep learning model. This will require me to create more robust training data and develop a more sophisticated, cloud-based workflow, but the the tradeoff will be that the model should be more precise.
+```{=html}
+<div class="embed-container">
+<script src="https://gist.github.com/nlebovits/224359fc03ccf1cd4c5deb57067a4cec.js" style="border: 2px></script>
+</div>
+```
