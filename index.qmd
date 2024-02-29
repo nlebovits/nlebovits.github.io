@@ -7,9 +7,6 @@ about:
   image-width: 20em
   image-shape: round
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/nlebovits
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/nlebovits/

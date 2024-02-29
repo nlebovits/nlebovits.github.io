@@ -1,14 +1,21 @@
 [
   {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/wetland_eo/index.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
+      "/posts/eo_for_planning/index.html",
       "/posts/dashboard/index.html",
       "/posts/upzoning/index.html",
       "/posts/flood_prediction/index.html",
-      "/posts/ebird/index.html",
       "/posts/wetland_change/index.html",
       "/posts/illegal_dumping/index.html",
       "/posts/water_suppliers/index.html",
+      "/posts/ebird/index.html",
       "/posts/illegal_dumping_dashboard/index.html"
     ]
   }

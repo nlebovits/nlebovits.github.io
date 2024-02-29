@@ -1,9 +1,10 @@
 ---
 title: "Wetland Change in Argentina"
-date: 11-2-2023
+date: 12-4-2023
 categories: [land cover change, remote sensing, google earth engine, machine learning, global south]
 engine: knitr
 freeze: false
+image: "ibera_daniel_allen_bbc.jpg"
 ---
 ```{css echo=FALSE}
 .embed-container {
@@ -40,7 +41,6 @@ Here, you can see my code in Google Colab:
 
 Additionally, for a wetland ecology class, I put together a presentation on how remote sensing is used for wetland monitoring:
 
-I also put together a more high-level presentation on how remote sensing is used for wetland monitoring, which is available here:
 
 ```{=html}
 <!-- No changes needed for the embed-container -->

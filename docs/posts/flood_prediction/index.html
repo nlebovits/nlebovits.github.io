@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,7 +57,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -124,6 +125,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-and-model" id="toc-data-and-model" class="nav-link" data-scroll-target="#data-and-model">Data and Model</a></li>
+  <li><a href="#ongoing-work" id="toc-ongoing-work" class="nav-link" data-scroll-target="#ongoing-work">Ongoing Work</a></li>
   </ul>
 </nav>
     </div>
@@ -186,11 +189,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>As part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.</p>
-<p><img src="costa_rica_flood_probabilities.png" class="img-fluid" alt="A raster map of flood probabilities across Costa Rica"> ## Data and Model This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="costa_rica_flood_probabilities.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A raster map of flood probabilities across Costa Rica</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-and-model" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-model">Data and Model</h2>
+<p>This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
 <div class="embed-container">
 <script src="https://gist.github.com/nlebovits/224359fc03ccf1cd4c5deb57067a4cec.js" style="border: 2px></script>
 </div>
-<div id=" quarto-navigation-envelope"="" class="hidden">
+</section>
+<section id=" ongoing-work"="" class="level2">
+<h2>Ongoing Work</h2>
+<p>Currently, I am working on several related components of this project: incorporating additional climate risks (heat hazard, landslide susceptibility, and drought risk), calculating population exposure and vulnerability, and scaling the workflow using Google Cloud and Compute Engine to allow for processing larger volumes of data faster.</p>
+<div id="quarto-navigation-envelope" class="hidden">
 <p><span class="hidden" data-render-id="quarto-int-sidebar-title">Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-int-navbar-title">Nissim Lebovits</span> <span class="hidden" data-render-id="quarto-int-navbar:Home">Home</span> <span class="hidden" data-render-id="quarto-int-navbar:/index.html">/index.html</span> <span class="hidden" data-render-id="quarto-int-navbar:My Work">My Work</span> <span class="hidden" data-render-id="quarto-int-navbar:/projects.html">/projects.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Resume">Resume</span> <span class="hidden" data-render-id="quarto-int-navbar:/resume.html">/resume.html</span> <span class="hidden" data-render-id="quarto-int-navbar:https://www.linkedin.com/in/nlebovits/">https://www.linkedin.com/in/nlebovits/</span> <span class="hidden" data-render-id="quarto-int-navbar:https://github.com/nlebovits/">https://github.com/nlebovits/</span> <span class="hidden" data-render-id="footer-left">Powered by <a href="https://quarto.org">Quarto</a></span> <span class="hidden" data-render-id="footer-center"><a href="mailto:nissim@design.upenn.edu">Contact Me</a></span> <span class="hidden" data-render-id="footer-right">© 2023 Nissim Lebovits</span></p>
 </div>
 <div id="quarto-meta-markdown" class="hidden">

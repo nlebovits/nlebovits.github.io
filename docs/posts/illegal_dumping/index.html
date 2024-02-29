@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -57,7 +57,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -153,20 +154,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>https://rpubs.com/nlebovits/musa-508-hw-3</p>
-<p>Illegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. Due to various causes, under-reporting of dumping issues in certain areas likely leads to selection bias. Below, we attempt to implement two Poisson regression-based predictive models to mitigate this selection bias. One of these models incorporates spatial process into its data in the form of spatial lag while the other does not. Both models are evaluated using regular 100-fold cross validation and leave one location out spatial cross validation. Finally, we compare the results to the accuracy of a traditional kernel density estimate-based hotspot prediction. We find that:</p>
-<pre><code>incorporating spatial process into the model substantially improved its performance,
+<div class="cell">
+<style type="text/css">
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-spatial cross-validation reveals that random k-fold cross validation is meaningfully over-optimistic in its evaluation of predictions,
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-our model does not generalize well across neighborhoods or racial contexts,
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
 
-our model does not meaningfully improve over a more traditional kernel density estimate prediction approach,
-
-and finally, our model is highly sensitive to input conditions such as cell size and classification breaks.</code></pre>
-<p>As a result, we do not recommend that this algorithm be put into production.</p>
-<p>Above, we evaluated the effectiveness of a Poisson regression in predicting illegal dumping across Philadelphia. We assessed the utility of incorporating spatial process into our dataset and compared the merits of random k-fold cross validation versus spatial cross validation at the neighborhood level. We evaluated the accuracy and generalizability of all models and found that the model that incorporated spatial process meaningfully outperformed the model that did not. However, spatial cross-validation revealed that the model does not generalize well across neighborhoods. Furthermore, we found that it does not generalize well across racial contexts. Lastly, we compared the model to a more traditional hotspot prediction approach using a kernel density estimate and found that it did not offer much in the way of improvement.</p>
-<p>As a result of these findings, we do not recommend that this model be put into production. Given its limited accuracy and generalizability, especially compared to simpler approaches such as a KDE, it is not worth the effort invested. We found, furthermore, that it is highly sensitive to input parameters such as the cell size of the hexagon grid, or the class breaks used to define risk classes for prediction (quantile breaks were more effective at capturing risk than Jenks breaks, despite the skewed distribution of dumping complaints). In the course of our work, we found that other models, such as a regression tree, spatial lag regression, or geographically weighted regression, performed better and may be preferrable, too. In sum, given the sensitivity of the model to input parameters and its limited improvement over simpler approaches, we do not recommend using it.</p>
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+</style>
+</div>
+<p>Illegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. My interest in illegal dumping dates back to my AmeriCorps years with the city, and is something I’ve explored in other contexts, including for <a href="../../posts/dashboard/index.html">Clean &amp; Green Philly</a> and in my <a href="../../posts/illegal_dumping_dashboard/index.html">illegal dumping dashboard</a> built in R with <code>flexdashboard</code>.</p>
+<p>For one of my assignments in my “Public Policy Analytics” class at Penn, I built two Poisson regression-based predictive models to mitigate selection bias in illegal dumping prediction. I incorporated spatial processes into one of the models and evaluted one using spatial cross validation. However, I found that neither model represented an improvement over traditional kernel density estimate-based hotspot prediction.</p>
+<p>My full analysis is available on RPubs:</p>
+<div class="resp-container">
+<iframe src="https://rpubs.com/nlebovits/musa-508-hw-3" style="border: 2px"></iframe>
+</div>
 
 
 

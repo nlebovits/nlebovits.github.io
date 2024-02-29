@@ -42,8 +42,10 @@ image: "dashboard_screenshot.png"
 }
 ```
 
+To improve my R skills, I built a dashboard in R that uses `flexdashboard` to visualize illegal dumping in Philadelphia. The dashboard is interactive and allows users to choose different layers to visualize. It pulls data from the City's Carto database and automates daily updates with a cron job.
+
 ```{=html}
 <div class="resp-container">
-    <iframe class="resp-iframe" src="https://stats.andrewheiss.com/iframe-fun/dashboard.html"></iframe>
+    <iframe class="resp-iframe" src="https://rpubs.com/nlebovits/phl-illegal-dumping"></iframe>
 </div>
 ```

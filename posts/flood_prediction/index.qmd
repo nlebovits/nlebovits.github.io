@@ -41,3 +41,6 @@ This work builds on a UN-Spider workflow that extracts flooding data for a given
 <script src="https://gist.github.com/nlebovits/224359fc03ccf1cd4c5deb57067a4cec.js" style="border: 2px></script>
 </div>
 ```
+
+## Ongoing Work
+Currently, I am working on several related components of this project: incorporating additional climate risks (heat hazard, landslide susceptibility, and drought risk), calculating population exposure and vulnerability, and scaling the workflow using Google Cloud and Compute Engine to allow for processing larger volumes of data faster.

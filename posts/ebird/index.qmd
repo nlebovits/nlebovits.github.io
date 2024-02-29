@@ -1,13 +1,53 @@
 ---
 title: "Sea Level Rise Threat to Biodiversity"
-date: 11-2-2023 
+date: 12-14-2022 
 engine: knitr
 freeze: false
 categories: [biodiversity, urban, sea level rise]
 image: "hotspots.png"
 ---
 
-In this project, I explore the potential of using publicly available citizen science data from eBird to asses the threat of sea level rise to bird biodiversity in Philadelphia. Specifically, the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden are identified as areas facing a particularly high threat by sea level rise to biodiversity. Future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-For a floodplain management class in my first semester at Penn, 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+```
+
+For a floodplain management class in my first semester at Penn, I was interested in using citizen science data from eBird to explore conflicts between biodiversity and sea level rise. Follow the Cornell Ornithology Lab's workflows for eBird data in R, I explored different ways of aggregating bird observations to a hex grid in Philadelphia, including trying to account for anomalous observations during COVID. Then I compared these data to projected NOAA sea level rise scenarios. I identified the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden as areas facing a particularly high threat by sea level rise to biodiversity. I also suggested that future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.
+
+My full analysis is available on RPubs:
+
+```{=html}
+<div class="resp-container">
+<iframe src="https://rpubs.com/nlebovits/phl-birds-sdm" style="border: 2px"></iframe>
+</div>
+```
