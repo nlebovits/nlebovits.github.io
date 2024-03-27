@@ -20,7 +20,9 @@ about:
 
 I'm a master's student in city planning at the University of Pennsylvania's [Weitzman School of Design](https://www.design.upenn.edu/), where I focus on environmental planning and spatial analysis.
 
-Currently, I work as a research assistant for [Professor Allison Lassiter](https://www.design.upenn.edu/people/allison-lassiter), with whom I'm building a clustering model to identify vulnerable U.S. community drinking water systems. I also work for [Professor Matthijs Bouw](https://www.design.upenn.edu/people/matthijs-bouw) on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in R and Python, as well as JavaScript and ArcGIS. Recently, I've been using Google Earth Engine for machine learning applications.
+Currently, I work as a research assistant for [Professor Allison Lassiter](https://www.design.upenn.edu/people/allison-lassiter), with whom I'm building a clustering model to identify vulnerable U.S. public drinking water systems. I also work for [Professor Matthijs Bouw](https://www.design.upenn.edu/people/matthijs-bouw) on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in Python and R, as well as JavaScript and ArcGIS. I use Google Earth Engine to build machine learning pipelines and am currently learning the TorchGeo library for scalable deep learning with satellite images.
+
+I'm the founder and project lead for [Clean & Green Philly](https://www.cleanandgreenphilly.org/), an open source web tool that helps community groups in Philadelphia target vacant properties for anti-gun violence interventions.
 
 I'm interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out [my work](https://nlebovits.github.io/projects.html) to see what I've been up to lately.
 
