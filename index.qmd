@@ -1,10 +1,10 @@
 ---
 title: "Nissim Lebovits"
-subtitle: "Cities, Climate, Data<br>MCP @ Wietzman School of Design"
+subtitle: "Cities, Climate, Data<br>2024-25 Fulbright research fellowship grantee"
 image: assets/Lebovits_Headshot.jpg
 about:
   template: jolla
-  image-width: 20em
+  image-width: 28em
   image-shape: round
   links:
     - icon: linkedin
@@ -18,12 +18,10 @@ about:
       href: mailto:nissim@design.upenn.edu
 ---
 
-I'm a master's student in city planning at the University of Pennsylvania's [Weitzman School of Design](https://www.design.upenn.edu/), where I focus on environmental planning and spatial analysis.
+In 2025, I'll be headed to La Plata, Argentina on a Fulbright research fellowship to investigate the use of remote sensing for improved flood risk modeling. I have a master's degree in city planning from the University of Pennsylvania's [Weitzman School of Design](https://www.design.upenn.edu/), where I focused on environmental planning and spatial analysis.
 
-Currently, I work as a research assistant for [Professor Allison Lassiter](https://www.design.upenn.edu/people/allison-lassiter), with whom I'm building a clustering model to identify vulnerable U.S. public drinking water systems. I also work for [Professor Matthijs Bouw](https://www.design.upenn.edu/people/matthijs-bouw) on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in Python and R, as well as JavaScript and ArcGIS. I use Google Earth Engine to build machine learning pipelines and am currently learning the TorchGeo library for scalable deep learning with satellite images.
+Currently, I work as a research assistant for [Professor Allison Lassiter](https://www.design.upenn.edu/people/allison-lassiter), with whom I'm building a clustering model to identify vulnerable U.S. public drinking water systems. I also work for [Professor Matthijs Bouw](https://www.design.upenn.edu/people/matthijs-bouw) on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in Python, R, and Google Earth Engine.
 
-I'm the founder and project lead for [Clean & Green Philly](https://www.cleanandgreenphilly.org/), an open source web tool that helps community groups in Philadelphia target vacant properties for anti-gun violence interventions.
+I'm the founder and project lead for [Clean & Green Philly](https://www.cleanandgreenphilly.org/), an open source web tool that helps community groups in Philadelphia target vacant properties for place-based, anti-gun violence interventions.
 
 I'm interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out [my work](https://nlebovits.github.io/projects.html) to see what I've been up to lately.
-
-In 2021, I spent a year as an AmeriCorps VISTA with the City of Philadelphia, where I worked to support residents of the [West Philadelphia Promise Zone](https://www.phila.gov/programs/west-philadelphia-promise-zone/). Before that, I was managing editor for [Symposem Magazine](https://symposeum.us/), and before that, [I studied history](https://ir.vanderbilt.edu/handle/1803/16300) at Vanderbilt University.
