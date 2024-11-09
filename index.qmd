@@ -3,8 +3,8 @@ title: "Nissim Lebovits"
 subtitle: "Cities, Climate, Data<br>2024-25 Fulbright research fellowship grantee"
 image: assets/Lebovits_Headshot.jpg
 about:
-  template: jolla
-  image-width: 28em
+  template: trestles
+  image-width: 18em
   image-shape: round
   links:
     - icon: linkedin
