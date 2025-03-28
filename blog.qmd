@@ -1,0 +1,12 @@
+---
+title: "Datos a escala humana"
+listing:
+  contents: blogs
+  sort: "date desc"
+  type: grid       # Change the layout type to grid
+  categories: false # Disable categories if you don't want them displayed
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---

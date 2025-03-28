@@ -4,13 +4,14 @@ project:
 
 website:
   title: "Nissim Lebovits"
-  favicon: "assets/alps_profile_pig.jpeg"
+  favicon: "assets/alps_profile_pic.jpeg"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - projects.qmd 
       - resume.qmd
+      - blog.qmd
     right:
       - icon: linkedin
         href: "https://www.linkedin.com/in/nlebovits/"
@@ -23,11 +24,11 @@ website:
       
   page-footer:
     center: |
-      [Contact Me](mailto:nissim@design.upenn.edu)
+      [Contact Me](mailto:nissimlebovits@proton.me)
     left: |
       Powered by [Quarto](https://quarto.org)
     right: |
-      &#169; 2023 Nissim Lebovits
+      &#169; 2025 Nissim Lebovits
     background: "#f8f9fa"
 
 format:

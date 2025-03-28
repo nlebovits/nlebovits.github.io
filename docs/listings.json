@@ -6,6 +6,10 @@
     ]
   },
   {
+    "listing": "/blog.html",
+    "items": []
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/posts/clean_and_green_oped/index.html",

@@ -1,11 +1,11 @@
 ---
 title: "Resume" 
-date: 2024-02-26
+date: 2025-03-27
 published-title: Last Updated
 engine: knitr
 freeze: false
 cv:
-  pdf: "assets/2024_02_26_full_resume.pdf"
+  pdf: "assets/2025_03_24_lebovits_full_resume.pdf"
 ---
 
 ```{css echo=FALSE}

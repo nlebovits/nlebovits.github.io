@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Nissim Lebovits",
     "section": "",
-    "text": "In 2025, I’ll be headed to La Plata, Argentina on a Fulbright research fellowship to investigate the use of remote sensing for improved flood risk modeling. I have a master’s degree in city planning from the University of Pennsylvania’s Weitzman School of Design, where I focused on environmental planning and spatial analysis.\nCurrently, I work as a research assistant for Professor Allison Lassiter, with whom I’m building a clustering model to identify vulnerable U.S. public drinking water systems. I also work for Professor Matthijs Bouw on a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss. I work primarily in Python, R, and Google Earth Engine.\nI’m the founder and project lead for Clean & Green Philly, an open source web tool that helps community groups in Philadelphia target vacant properties for place-based, anti-gun violence interventions.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately."
+    "text": "I am a Fulbright research fellow based in La Plata, Argentina, where I am investigating opportunities to use open source satellite imagery to improve local flood risk modeling. I have a master’s degree in city planning from the University of Pennsylvania’s Weitzman School of Design, where I focused on environmental planning and geospatial data science.\nPreviously, I worked as a research assistant for Professor Allison Lassiter. We built a clustering model to identify vulnerable U.S. public drinking water systems, and worked on a multi-agent system simulation of how saltwater intrusion might affect coastal drinking water supply networks. With Professor Matthijs Bouw, I also developed flooding and heat models for a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss.\nI am the founder of Clean & Green Philly, an open source web tool that helps community groups in Philadelphia target vacant properties for place-based, anti-gun violence interventions.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately."
   },
   {
     "objectID": "posts/gee_presentation/index.html",
@@ -56,6 +56,13 @@
     "text": "Remote Sensing for Wetland Applications\n\n\n\n\n\n\nflooding\n\n\nremote sensing\n\n\ngoogle earth engine\n\n\nmachine learning\n\n\nglobal south\n\n\n\n\n\n\n\n\n\nDec 5, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Datos a escala humana",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "posts/wetland_change/index.html",
     "href": "posts/wetland_change/index.html",
     "title": "Wetland Change in Argentina",
@@ -74,7 +81,7 @@
     "href": "posts/flood_prediction/index.html#data-and-model",
     "title": "Flood Prediction for Costa Rica",
     "section": "Data and Model",
-    "text": "Data and Model\nThis work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.\n\n\n \n\n  \n    \n      Powered by [Quarto](https://quarto.org)\n  \n       \n    \n      [Contact Me](mailto:nissim@design.upenn.edu)\n  \n    \n    \n      © 2023 Nissim Lebovits"
+    "text": "Data and Model\nThis work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.\n\n\n \n\n  \n    \n      Powered by [Quarto](https://quarto.org)\n  \n       \n    \n      [Contact Me](mailto:nissimlebovits@proton.me)\n  \n    \n    \n      © 2025 Nissim Lebovits"
   },
   {
     "objectID": "posts/clean_and_green_oped/index.html",
