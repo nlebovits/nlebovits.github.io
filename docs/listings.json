@@ -1,15 +1,5 @@
 [
   {
-    "listing": "/talks.html",
-    "items": [
-      "/talks/wetland_eo/index.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": []
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/posts/clean_and_green_oped/index.html",
@@ -23,6 +13,16 @@
       "/posts/water_suppliers/index.html",
       "/posts/ebird/index.html",
       "/posts/illegal_dumping_dashboard/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": []
+  },
+  {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/wetland_eo/index.html"
     ]
   }
 ]

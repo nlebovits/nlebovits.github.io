@@ -44,3 +44,14 @@ editor: source
 
 
 
+
+babelquarto:
+  languagecodes:
+  - name: es
+    text: "Español"
+  - name: en
+    text: "English"
+  mainlanguage: 'en'
+  languages: ['es']
+title-es: Nissim Lebovits
+lang: en

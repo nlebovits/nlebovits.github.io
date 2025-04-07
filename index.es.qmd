@@ -1,0 +1,27 @@
+---
+title: "Nissim Lebovits"
+subtitle: "Ciudades, Clima, Datos<br>Investigador becario Fulbright 2025"
+image: assets/Lebovits_Headshot.jpg
+about:
+  template: trestles
+  image-width: 18em
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/nlebovits/
+    - icon: github
+      text: Github
+      href: https://github.com/nlebovits/
+    - icon: envelope
+      text: Contáctame
+      href: mailto:nissimlebovits@proton.me
+---
+
+Soy un investigador becario Fulbright basado en La Plata, Argentina, donde investigo oportunidades para utilizar imágenes satelitales de código abierto para mejorar los modelos locales de riesgo de inundaciones. Tengo una maestría en planificación urbana de la [Escuela de Diseño Weitzman](https://www.design.upenn.edu/) de la Universidad de Pensilvania, donde me especialicé en planificación ambiental y ciencia de datos geoespaciales.
+
+Anteriormente, trabajé como asistente de investigación para la [Profesora Allison Lassiter](https://www.design.upenn.edu/people/allison-lassiter). Construimos un modelo de agrupamiento para identificar sistemas públicos vulnerables de agua potable en Estados Unidos, y trabajamos en una simulación de sistema multiagente sobre cómo la intrusión de agua salada podría afectar las redes costeras de suministro de agua potable. Con el [Profesor Matthijs Bouw](https://www.design.upenn.edu/people/matthijs-bouw), también desarrollé modelos de inundación y calor para un proyecto de ONU-Hábitat que ayudará a los planificadores urbanos en el sur global a mitigar los conflictos entre la expansión urbana, las amenazas climáticas y la pérdida de biodiversidad.
+
+Soy fundador de [Clean & Green Philly](https://www.cleanandgreenphilly.org/), una plataforma tecnológica sin fines de lucro y de código abierto que promueve intervenciones basadas en datos en propiedades vacantes para mejorar la calidad de vida en Filadelfia.
+
+Me interesa utilizar datos para fomentar la participación ciudadana y construir ciudades más sostenibles e inclusivas. Creo en la tecnología de código abierto y el trabajo impulsado por la comunidad. Revisa [mi trabajo](https://nlebovits.github.io/projects.html) para ver en qué he estado trabajando últimamente.
