@@ -1,0 +1,13 @@
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - projects.qmd 
+      - resume.qmd
+      - blog.qmd
+    right:
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/nlebovits/"
+      - icon: github
+        href: "https://github.com/nlebovits/"

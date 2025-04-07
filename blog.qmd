@@ -1,5 +1,5 @@
 ---
-title: "Datos a escala humana"
+title: "Blog"
 listing:
   contents: blogs
   sort: "date desc"

@@ -5,18 +5,6 @@ project:
 website:
   title: "Nissim Lebovits"
   favicon: "assets/alps_profile_pic.jpeg"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - projects.qmd 
-      - resume.qmd
-      - blog.qmd
-    right:
-      - icon: linkedin
-        href: "https://www.linkedin.com/in/nlebovits/"
-      - icon: github
-        href: "https://github.com/nlebovits/"
   search: 
     location: navbar
     type: overlay
