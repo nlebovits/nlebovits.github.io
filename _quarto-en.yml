@@ -3,9 +3,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - projects.qmd 
+      - href: projects.qmd
+        text: My Work
       - resume.qmd
-      - blog.qmd
     right:
       - icon: linkedin
         href: "https://www.linkedin.com/in/nlebovits/"

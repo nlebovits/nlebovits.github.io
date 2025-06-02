@@ -1,94 +1,38 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.es.html",
+    "href": "index.es.html",
     "title": "Nissim Lebovits",
     "section": "",
-    "text": "I am a Fulbright research fellow based in La Plata, Argentina, where I am investigating opportunities to use open source satellite imagery to improve local flood risk modeling. I have a master’s degree in city planning from the University of Pennsylvania’s Weitzman School of Design, where I focused on environmental planning and geospatial data science.\nPreviously, I worked as a research assistant for Professor Allison Lassiter. We built a clustering model to identify vulnerable U.S. public drinking water systems, and worked on a multi-agent system simulation of how saltwater intrusion might affect coastal drinking water supply networks. With Professor Matthijs Bouw, I also developed flooding and heat models for a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss.\nI am the founder of Clean & Green Philly, an open source, nonprofit tech platform that promotes data-driven interventions in vacant properties to improve quality of life in Philadelphia.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately."
+    "text": "Soy un investigador becario Fulbright basado en La Plata, Argentina, donde investigo oportunidades para utilizar imágenes satelitales de código abierto para mejorar los modelos locales de riesgo de inundaciones. Tengo una maestría en planificación urbana de la Escuela de Diseño Weitzman de la Universidad de Pensilvania, donde me especialicé en planificación ambiental y ciencia de datos geoespaciales.\nAnteriormente, trabajé como asistente de investigación para la Profesora Allison Lassiter. Construimos un modelo de agrupamiento para identificar sistemas públicos vulnerables de agua potable en Estados Unidos, y trabajamos en una simulación de sistema multiagente sobre cómo la intrusión de agua salada podría afectar las redes costeras de suministro de agua potable. Con el Profesor Matthijs Bouw, también desarrollé modelos de inundación y calor para un proyecto de ONU-Hábitat que ayudará a los planificadores urbanos en el sur global a mitigar los conflictos entre la expansión urbana, las amenazas climáticas y la pérdida de biodiversidad.\nSoy fundador de Clean & Green Philly, una plataforma tecnológica sin fines de lucro y de código abierto que promueve intervenciones basadas en datos en propiedades vacantes para mejorar la calidad de vida en Filadelfia.\nMe interesa utilizar datos para fomentar la participación ciudadana y construir ciudades más sostenibles e inclusivas. Creo en la tecnología de código abierto y el trabajo impulsado por la comunidad. Revisa mi trabajo para ver en qué he estado trabajando últimamente."
   },
   {
-    "objectID": "posts/gee_presentation/index.html",
-    "href": "posts/gee_presentation/index.html",
-    "title": "Google Earth Engine for Urban Planning",
+    "objectID": "talks/wetland_eo/index.html",
+    "href": "talks/wetland_eo/index.html",
+    "title": "Remote Sensing for Wetland Applications",
     "section": "",
-    "text": "Based on my work in Google Earth Engine for a UN-Habitat project, I gave a guest lecture to Penn’s graduate-level “deep learning applications for remote sensing” class. The lecture covered the basics of Google Earth Engine; several examples of using GEE in JavaScript and Python for flood detection, land surface temperature mapping, and land cover classification; ways to extend GEE’s functionality; and resources for learning GEE."
+    "text": "https://docs.google.com/presentation/d/1AlkHioQBzZBOPF-o245SvNZHyt560dM3ZOI3iu74CYU/edit?usp=sharing"
   },
   {
-    "objectID": "posts/water_suppliers/index.html",
-    "href": "posts/water_suppliers/index.html",
-    "title": "Identifying Vulnerable Water Suppliers",
-    "section": "",
-    "text": "As a research assistant for Professor Allison Lassiter, I work on assessing the vulnerability of U.S. coastal drinking water suppliers to climate change. We consider financial, physical, and climatic dimensions of vulnerability and are applying various clustering models to them, such as k-means clustering and Gaussian mixture modeling. We hope that this work will eventually inform a Robert Wood Johnson Foundation effort to direct funding to underserved and overburdened water suppliers.\nForthcoming, “Which water suppliers are underserved and overburdened? A multidimensional classification of vulnerability under climate stress,” Allison Lassiter, Nissim Lebovits, Zoe Kerrich, and Henry Feinstein."
-  },
-  {
-    "objectID": "posts/illegal_dumping/index.html",
-    "href": "posts/illegal_dumping/index.html",
-    "title": "Predicting Illegal Dumping",
-    "section": "",
-    "text": "Illegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. My interest in illegal dumping dates back to my AmeriCorps years with the city, and is something I’ve explored in other contexts, including for Clean & Green Philly and in my illegal dumping dashboard built in R with flexdashboard.\nFor one of my assignments in my “Public Policy Analytics” class at Penn, I built two Poisson regression-based predictive models to mitigate selection bias in illegal dumping prediction. I incorporated spatial processes into one of the models and evaluted one using spatial cross validation. However, I found that neither model represented an improvement over traditional kernel density estimate-based hotspot prediction.\nMy full analysis is available on RPubs:"
-  },
-  {
-    "objectID": "posts/clean_and_green_oped/index.html",
-    "href": "posts/clean_and_green_oped/index.html",
-    "title": "Op Ed: Use Data for Better Cleaning and Greening",
-    "section": "",
-    "text": "In response to Mayor Cherelle Parker’s cleaning and greening initiatives in Philadelphia, I wrote an op ed in The Philadelphia Citizen calling on the Mayor to take a more data-driven approach:\n\n\n\n\n\n\n“Philadelphia’s quality of life issues are primarily concentrated in a handful of neighborhoods. For example, just 11.9 percent of Census blocks see all of Philly’s gun assaults. A mere 6.6 percent of blocks suffer nearly half the illegal dumping, while 27.7 percent of blocks account for all of the vacant buildings in Philadelphia. These challenges stem from decades of systemic disinvestment in marginalized neighborhoods, and disproportionately affect Black, Brown and low-income communities.\n\n\n~\n\n\n\n“Rather than just continuing with biannual cleanups of the entire city, Mayor Parker and the Office of Clean and Green Initiatives should prioritize additional monthly cleanups of the 1.5 percent of properties that have a disproportionately negative impact on quality of life for many of the Philadelphia most marginalized residents. By using data already available to them, the administration can strategically and proactively target the areas that most need support.”"
-  },
-  {
-    "objectID": "posts/flood_prediction/index.html#overview",
-    "href": "posts/flood_prediction/index.html#overview",
-    "title": "Flood Prediction for Costa Rica",
-    "section": "Overview",
-    "text": "Overview\nAs part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.\n\n\n\nA raster map of flood probabilities across Costa Rica"
-  },
-  {
-    "objectID": "posts/flood_prediction/index.html#data-and-model",
-    "href": "posts/flood_prediction/index.html#data-and-model",
-    "title": "Flood Prediction for Costa Rica",
-    "section": "Data and Model",
-    "text": "Data and Model\nThis work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.\n\n\n \n\n  \n    \n      Powered by [Quarto](https://quarto.org)\n  \n       \n    \n      [Contact Me](mailto:nissimlebovits@proton.me)\n  \n    \n    \n      © 2025 Nissim Lebovits"
-  },
-  {
-    "objectID": "posts/wetland_change/index.html",
-    "href": "posts/wetland_change/index.html",
-    "title": "Wetland Change in Argentina",
-    "section": "",
-    "text": "For an independent study in applications of remote sensing for sustainable urban planning, I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nHere, you can see my code in Google Colab:\n\n\n\nAdditionally, for a wetland ecology class, I put together a presentation on how remote sensing is used for wetland monitoring:"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Datos a escala humana",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Work",
     "section": "",
     "text": "Seminario UBA: Datos abiertos para ciudades sustentables\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp Ed: Use Data for Better Cleaning and Greening\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle Earth Engine for Urban Planning\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemote Sensing for Urban Planning\n\n\n\n\n\n\n\n\n\nJan 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClean & Green Philly\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Upzoning Opportunities\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlood Prediction for Costa Rica\n\n\n\n\n\n\n\n\n\nDec 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWetland Change in Argentina\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Illegal Dumping\n\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Vulnerable Water Suppliers\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSea Level Rise Threat to Biodiversity\n\n\n\n\n\n\n\n\n\nDec 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIllegal Dumping Live Dashboard\n\n\n\n\n\n\n\n\n\nDec 2, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Presentations",
+    "objectID": "posts/upzoning/index.html",
+    "href": "posts/upzoning/index.html",
+    "title": "Identifying Upzoning Opportunities",
     "section": "",
-    "text": "Remote Sensing for Wetland Applications\n\n\n\n\n\n\nflooding\n\n\nremote sensing\n\n\ngoogle earth engine\n\n\nmachine learning\n\n\nglobal south\n\n\n\n\n\n\n\n\n\nDec 5, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "For a “Public Policy Analytics” class at Penn, Laura Frances and I analyzed conflicts between anticipated and current zoning. Using a random forest model trained on historic Philadelphia construction permits, we identified areas of the city with restrictive zoning that would potentially hinder anticipated residential development. We then considered how the model could be used to inform efforts at zoning reform and more strategic planning meant to alleviate issues of housing affordability across Philadelphia."
   },
   {
-    "objectID": "posts/dashboard/index.html",
-    "href": "posts/dashboard/index.html",
-    "title": "Clean & Green Philly",
+    "objectID": "posts/illegal_dumping_dashboard/index.html",
+    "href": "posts/illegal_dumping_dashboard/index.html",
+    "title": "Illegal Dumping Live Dashboard",
     "section": "",
-    "text": "Philadelphia has a gun violence problem. Through Code for Philly, I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact. For this work, I was awarded the 2023 Witte-Sakamoto Family Prize in City Planning.\nExplore the live version of the dashboard here or read more about it in the PDF below."
-  },
-  {
-    "objectID": "posts/eo_for_planning/index.html",
-    "href": "posts/eo_for_planning/index.html",
-    "title": "Remote Sensing for Urban Planning",
-    "section": "",
-    "text": "Based on an independent study that I did in remote sensing applications for urban planning, I gave a guest lecture to Penn’s graduate-level “deep learning applications for remote sensing” class. The lecture covered the basics of remote sensing, how remote sensing uses machine learning, and common applications of remote sensing for urban planning."
-  },
-  {
-    "objectID": "posts/ebird/index.html",
-    "href": "posts/ebird/index.html",
-    "title": "Sea Level Rise Threat to Biodiversity",
-    "section": "",
-    "text": "For a floodplain management class in my first semester at Penn, I was interested in using citizen science data from eBird to explore conflicts between biodiversity and sea level rise. Follow the Cornell Ornithology Lab’s workflows for eBird data in R, I explored different ways of aggregating bird observations to a hex grid in Philadelphia, including trying to account for anomalous observations during COVID. Then I compared these data to projected NOAA sea level rise scenarios. I identified the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden as areas facing a particularly high threat by sea level rise to biodiversity. I also suggested that future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.\nMy full analysis is available on RPubs:"
+    "text": "To improve my R skills, I built a dashboard in R that uses flexdashboard to visualize illegal dumping in Philadelphia. The dashboard is interactive and allows users to choose different layers to visualize. It pulls data from the City’s Carto database and automates daily updates with a cron job."
   },
   {
     "objectID": "posts/seminario_uba/index.html#actividad-1",
@@ -126,31 +70,87 @@
     "text": "Slides"
   },
   {
-    "objectID": "posts/illegal_dumping_dashboard/index.html",
-    "href": "posts/illegal_dumping_dashboard/index.html",
-    "title": "Illegal Dumping Live Dashboard",
+    "objectID": "posts/ebird/index.html",
+    "href": "posts/ebird/index.html",
+    "title": "Sea Level Rise Threat to Biodiversity",
     "section": "",
-    "text": "To improve my R skills, I built a dashboard in R that uses flexdashboard to visualize illegal dumping in Philadelphia. The dashboard is interactive and allows users to choose different layers to visualize. It pulls data from the City’s Carto database and automates daily updates with a cron job."
+    "text": "For a floodplain management class in my first semester at Penn, I was interested in using citizen science data from eBird to explore conflicts between biodiversity and sea level rise. Follow the Cornell Ornithology Lab’s workflows for eBird data in R, I explored different ways of aggregating bird observations to a hex grid in Philadelphia, including trying to account for anomalous observations during COVID. Then I compared these data to projected NOAA sea level rise scenarios. I identified the John Heinz National Wildlife Refuge, Pennypack on the Delaware, and Bartram’s Garden as areas facing a particularly high threat by sea level rise to biodiversity. I also suggested that future efforts along these lines should focus on improving on the statistical rigor of this analysis and standardizing a streamlined workflow to allow for replication in Philadelphia and other cities, while also striving to interface with local government and community members to translate this model into concrete conservation efforts.\nMy full analysis is available on RPubs:"
   },
   {
-    "objectID": "posts/upzoning/index.html",
-    "href": "posts/upzoning/index.html",
-    "title": "Identifying Upzoning Opportunities",
+    "objectID": "posts/eo_for_planning/index.html",
+    "href": "posts/eo_for_planning/index.html",
+    "title": "Remote Sensing for Urban Planning",
     "section": "",
-    "text": "For a “Public Policy Analytics” class at Penn, Laura Frances and I analyzed conflicts between anticipated and current zoning. Using a random forest model trained on historic Philadelphia construction permits, we identified areas of the city with restrictive zoning that would potentially hinder anticipated residential development. We then considered how the model could be used to inform efforts at zoning reform and more strategic planning meant to alleviate issues of housing affordability across Philadelphia."
+    "text": "Based on an independent study that I did in remote sensing applications for urban planning, I gave a guest lecture to Penn’s graduate-level “deep learning applications for remote sensing” class. The lecture covered the basics of remote sensing, how remote sensing uses machine learning, and common applications of remote sensing for urban planning."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "My Work",
+    "objectID": "posts/dashboard/index.html",
+    "href": "posts/dashboard/index.html",
+    "title": "Clean & Green Philly",
     "section": "",
-    "text": "Seminario UBA: Datos abiertos para ciudades sustentables\n\n\n\n\n\n\n\n\n\nJun 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOp Ed: Use Data for Better Cleaning and Greening\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle Earth Engine for Urban Planning\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemote Sensing for Urban Planning\n\n\n\n\n\n\n\n\n\nJan 21, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClean & Green Philly\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Upzoning Opportunities\n\n\n\n\n\n\n\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlood Prediction for Costa Rica\n\n\n\n\n\n\n\n\n\nDec 11, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWetland Change in Argentina\n\n\n\n\n\n\n\n\n\nDec 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Illegal Dumping\n\n\n\n\n\n\n\n\n\nOct 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Vulnerable Water Suppliers\n\n\n\n\n\n\n\n\n\nJan 2, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSea Level Rise Threat to Biodiversity\n\n\n\n\n\n\n\n\n\nDec 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIllegal Dumping Live Dashboard\n\n\n\n\n\n\n\n\n\nDec 2, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Philadelphia has a gun violence problem. Through Code for Philly, I am leading a civic tech project that will help solve this problem by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact. For this work, I was awarded the 2023 Witte-Sakamoto Family Prize in City Planning.\nExplore the live version of the dashboard here or read more about it in the PDF below."
   },
   {
-    "objectID": "talks/wetland_eo/index.html",
-    "href": "talks/wetland_eo/index.html",
-    "title": "Remote Sensing for Wetland Applications",
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Presentations",
     "section": "",
-    "text": "https://docs.google.com/presentation/d/1AlkHioQBzZBOPF-o245SvNZHyt560dM3ZOI3iu74CYU/edit?usp=sharing"
+    "text": "Remote Sensing for Wetland Applications\n\n\n\n\n\n\nflooding\n\n\nremote sensing\n\n\ngoogle earth engine\n\n\nmachine learning\n\n\nglobal south\n\n\n\n\n\n\n\n\n\nDec 5, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/wetland_change/index.html",
+    "href": "posts/wetland_change/index.html",
+    "title": "Wetland Change in Argentina",
+    "section": "",
+    "text": "For an independent study in applications of remote sensing for sustainable urban planning, I used Google Earth Engine and global wetlands datasets to train a Random Forest model on Landsat 7 spectral images and assess wetlands change from 2000 to 2020.\nMy model achieved 95% accuracy and 65% recall, and suggests that the Iberá wetlands have declined significantly in the past 20 years.\nHere, you can see my code in Google Colab:\n\n\n\nAdditionally, for a wetland ecology class, I put together a presentation on how remote sensing is used for wetland monitoring:"
+  },
+  {
+    "objectID": "posts/flood_prediction/index.html#overview",
+    "href": "posts/flood_prediction/index.html#overview",
+    "title": "Flood Prediction for Costa Rica",
+    "section": "Overview",
+    "text": "Overview\nAs part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.\n\n\n\nA raster map of flood probabilities across Costa Rica"
+  },
+  {
+    "objectID": "posts/flood_prediction/index.html#data-and-model",
+    "href": "posts/flood_prediction/index.html#data-and-model",
+    "title": "Flood Prediction for Costa Rica",
+    "section": "Data and Model",
+    "text": "Data and Model\nThis work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on build a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.\n\n\n \n\n  \n    \n      Powered by [Quarto](https://quarto.org)\n  \n       \n    \n      [Contact Me](mailto:nissimlebovits@proton.me)\n  \n    \n    \n      © 2025 Nissim Lebovits"
+  },
+  {
+    "objectID": "posts/clean_and_green_oped/index.html",
+    "href": "posts/clean_and_green_oped/index.html",
+    "title": "Op Ed: Use Data for Better Cleaning and Greening",
+    "section": "",
+    "text": "In response to Mayor Cherelle Parker’s cleaning and greening initiatives in Philadelphia, I wrote an op ed in The Philadelphia Citizen calling on the Mayor to take a more data-driven approach:\n\n\n\n\n\n\n“Philadelphia’s quality of life issues are primarily concentrated in a handful of neighborhoods. For example, just 11.9 percent of Census blocks see all of Philly’s gun assaults. A mere 6.6 percent of blocks suffer nearly half the illegal dumping, while 27.7 percent of blocks account for all of the vacant buildings in Philadelphia. These challenges stem from decades of systemic disinvestment in marginalized neighborhoods, and disproportionately affect Black, Brown and low-income communities.\n\n\n~\n\n\n\n“Rather than just continuing with biannual cleanups of the entire city, Mayor Parker and the Office of Clean and Green Initiatives should prioritize additional monthly cleanups of the 1.5 percent of properties that have a disproportionately negative impact on quality of life for many of the Philadelphia most marginalized residents. By using data already available to them, the administration can strategically and proactively target the areas that most need support.”"
+  },
+  {
+    "objectID": "posts/illegal_dumping/index.html",
+    "href": "posts/illegal_dumping/index.html",
+    "title": "Predicting Illegal Dumping",
+    "section": "",
+    "text": "Illegal dumping is a major problem in Philadelphia. Especially in low-income, minority neighborhoods, illegal dumping has a significant impact on quality of life, property values, safety, and public health. My interest in illegal dumping dates back to my AmeriCorps years with the city, and is something I’ve explored in other contexts, including for Clean & Green Philly and in my illegal dumping dashboard built in R with flexdashboard.\nFor one of my assignments in my “Public Policy Analytics” class at Penn, I built two Poisson regression-based predictive models to mitigate selection bias in illegal dumping prediction. I incorporated spatial processes into one of the models and evaluted one using spatial cross validation. However, I found that neither model represented an improvement over traditional kernel density estimate-based hotspot prediction.\nMy full analysis is available on RPubs:"
+  },
+  {
+    "objectID": "posts/water_suppliers/index.html",
+    "href": "posts/water_suppliers/index.html",
+    "title": "Identifying Vulnerable Water Suppliers",
+    "section": "",
+    "text": "As a research assistant for Professor Allison Lassiter, I work on assessing the vulnerability of U.S. coastal drinking water suppliers to climate change. We consider financial, physical, and climatic dimensions of vulnerability and are applying various clustering models to them, such as k-means clustering and Gaussian mixture modeling. We hope that this work will eventually inform a Robert Wood Johnson Foundation effort to direct funding to underserved and overburdened water suppliers.\nForthcoming, “Which water suppliers are underserved and overburdened? A multidimensional classification of vulnerability under climate stress,” Allison Lassiter, Nissim Lebovits, Zoe Kerrich, and Henry Feinstein."
+  },
+  {
+    "objectID": "posts/gee_presentation/index.html",
+    "href": "posts/gee_presentation/index.html",
+    "title": "Google Earth Engine for Urban Planning",
+    "section": "",
+    "text": "Based on my work in Google Earth Engine for a UN-Habitat project, I gave a guest lecture to Penn’s graduate-level “deep learning applications for remote sensing” class. The lecture covered the basics of Google Earth Engine; several examples of using GEE in JavaScript and Python for flood detection, land surface temperature mapping, and land cover classification; ways to extend GEE’s functionality; and resources for learning GEE."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nissim Lebovits",
+    "section": "",
+    "text": "I am a Fulbright research fellow based in La Plata, Argentina, where I am investigating opportunities to use open source satellite imagery to improve local flood risk modeling. I have a master’s degree in city planning from the University of Pennsylvania’s Weitzman School of Design, where I focused on environmental planning and geospatial data science.\nPreviously, I worked as a research assistant for Professor Allison Lassiter. We built a clustering model to identify vulnerable U.S. public drinking water systems, and worked on a multi-agent system simulation of how saltwater intrusion might affect coastal drinking water supply networks. With Professor Matthijs Bouw, I also developed flooding and heat models for a UN-Habitat project that will help urban planners in the global south mitigate conflicts between urban expansion, climate threats, and biodiversity loss.\nI am the founder of Clean & Green Philly, an open source, nonprofit tech platform that promotes data-driven interventions in vacant properties to improve quality of life in Philadelphia.\nI’m interested in using data to foster civic engagement and build more sustainable, inclusive cities. I believe in open-source tech and community-driven work. Check out my work to see what I’ve been up to lately."
   }
 ]
