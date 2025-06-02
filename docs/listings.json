@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/wetland_eo/index.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/posts/seminario_uba/index.html",
@@ -14,12 +20,6 @@
       "/posts/water_suppliers/index.html",
       "/posts/ebird/index.html",
       "/posts/illegal_dumping_dashboard/index.html"
-    ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": [
-      "/talks/wetland_eo/index.html"
     ]
   }
 ]
