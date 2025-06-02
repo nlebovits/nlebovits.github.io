@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 listing:
-  contents: blogs
+  contents: posts
   sort: "date desc"
   type: grid       # Change the layout type to grid
   categories: false # Disable categories if you don't want them displayed

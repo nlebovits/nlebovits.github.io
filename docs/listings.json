@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/blog.html",
     "items": [
+      "/posts/seminario_uba/index.html",
       "/posts/clean_and_green_oped/index.html",
       "/posts/gee_presentation/index.html",
       "/posts/eo_for_planning/index.html",
@@ -16,13 +17,26 @@
     ]
   },
   {
-    "listing": "/blog.html",
-    "items": []
-  },
-  {
     "listing": "/talks.html",
     "items": [
       "/talks/wetland_eo/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/seminario_uba/index.html",
+      "/posts/clean_and_green_oped/index.html",
+      "/posts/gee_presentation/index.html",
+      "/posts/eo_for_planning/index.html",
+      "/posts/dashboard/index.html",
+      "/posts/upzoning/index.html",
+      "/posts/flood_prediction/index.html",
+      "/posts/wetland_change/index.html",
+      "/posts/illegal_dumping/index.html",
+      "/posts/water_suppliers/index.html",
+      "/posts/ebird/index.html",
+      "/posts/illegal_dumping_dashboard/index.html"
     ]
   }
 ]
