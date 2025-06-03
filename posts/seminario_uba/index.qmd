@@ -57,6 +57,10 @@ image: "laplata_ast_2013094_lrg.jpg"
 
 ## Taller
 
+Para el taller, por favor hagan una copia propia de [este cuaderno de Google Colab](https://colab.research.google.com/drive/1cqbPNbRHsbVmNkgm23sESIALbekXzfcN?usp=sharing).
+
+Después del taller, voy a subir acá las soluciones a los ejercicios.
+
 
 ## Información de contacto
 
