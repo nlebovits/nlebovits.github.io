@@ -1,6 +1,6 @@
 ---
 title: "Resume" 
-date: 2025-03-27
+date: 2025-06-04
 published-title: Last Updated
 engine: knitr
 freeze: false
