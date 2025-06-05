@@ -5,7 +5,10 @@ website:
         text: Home
       - href: projects.qmd
         text: My Work
-      - resume.qmd
+      - href: "assets/2025_06_04_lebovits_full_resume.pdf"
+        text: Resumé
+      - href: "https://datosaescalahumana.substack.com/s/english"
+        text: Blog
     right:
       - icon: linkedin
         href: "https://www.linkedin.com/in/nlebovits/"

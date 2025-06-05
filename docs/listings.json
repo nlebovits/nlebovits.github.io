@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/talks.html",
-    "items": [
-      "/talks/wetland_eo/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/posts/seminario_uba/index.html",
