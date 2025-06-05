@@ -1,7 +1,0 @@
----
-title: "Remote Sensing for Wetland Applications"
-date: 12-05-2023
-categories: [flooding, remote sensing, google earth engine, machine learning, global south]
----
-
-https://docs.google.com/presentation/d/1AlkHioQBzZBOPF-o245SvNZHyt560dM3ZOI3iu74CYU/edit?usp=sharing
