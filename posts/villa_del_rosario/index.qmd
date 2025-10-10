@@ -1,0 +1,305 @@
+---
+title: "Identifying Vulnerable Water Suppliers"
+date: 09-10-2025 
+categories: [climate/environment, remote sensing]
+---
+
+## Steps
+
+### QGIS Installation
+- QGIS (https://qgis.org/download/)
+- QuickMapServices
+- Mapbiomas plugin
+- Google Earth Engine plugin
+
+#### Create WFS connections to:
+- IGN (https://wms.ign.gob.ar/geoserver/ign/ows?version=1.0.0)
+- IDECOR (https://idecor-ws.mapascordoba.gob.ar/geoserver/idecor/wfs)
+
+Add IDECOR fire data!
+
+### Google Earth Engine
+- Create account (https://signup.earthengine.google.com/)
+- Authenticate in QGIS
+
+### Download the following datasets
+- Boundary file for our AOI (https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/poligonal_coovilros.geojson)
+- Gobal forest loss due to fire (actually, it's 1.2GB, so let's try to access in QGIS for cloud native access...)
+(Here's the short version uploaded to the cloud: https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/bosque_perdido_a_fuego_2001-24.tif)
+
+
+ (https://glad.umd.edu/users/Alexandra/Fire_GFL_data/2001-24/LAM_fire_forest_loss_2001-24.tif)
+- Mapbiomas data for Argentina directly via plugin (2022, the most recent year)
+- GHSL population data (100m resolution) (https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R13_C13.zip)
+
+#### Backup if Mapbiomas is not working:
+
+
+Download small data from this link: https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/suelo_2022.tif
+
+Name layer as "suelo_2022"
+
+Run the following:
+```
+# Get the layer
+layer = QgsProject.instance().mapLayersByName('suelo_2022')[0]
+
+# Create individual class entries for each pixel value
+classes = [
+    QgsPalettedRasterRenderer.Class(3, QColor('#1f8d49'), 'Vegetación leñosa'),
+    QgsPalettedRasterRenderer.Class(4, QColor('#1f8d49'), 'Vegetación leñosa'),
+    QgsPalettedRasterRenderer.Class(45, QColor('#1f8d49'), 'Vegetación leñosa'),
+    QgsPalettedRasterRenderer.Class(6, QColor('#1f8d49'), 'Vegetación leñosa'),
+    QgsPalettedRasterRenderer.Class(11, QColor('#d6bc74'), 'Vegetación no leñosa'),
+    QgsPalettedRasterRenderer.Class(12, QColor('#d6bc74'), 'Vegetación no leñosa'),
+    QgsPalettedRasterRenderer.Class(63, QColor('#d6bc74'), 'Vegetación no leñosa'),
+    QgsPalettedRasterRenderer.Class(15, QColor('#ffefc3'), 'Área agropecuaria'),
+    QgsPalettedRasterRenderer.Class(18, QColor('#ffefc3'), 'Área agropecuaria'),
+    QgsPalettedRasterRenderer.Class(9, QColor('#ffefc3'), 'Área agropecuaria'),
+    QgsPalettedRasterRenderer.Class(36, QColor('#ffefc3'), 'Área agropecuaria'),
+    QgsPalettedRasterRenderer.Class(21, QColor('#ffefc3'), 'Área agropecuaria'),
+    QgsPalettedRasterRenderer.Class(22, QColor('#d4271e'), 'Área sin vegetación'),
+    QgsPalettedRasterRenderer.Class(33, QColor('#2532e3'), 'Cuerpo de agua'),
+    QgsPalettedRasterRenderer.Class(34, QColor('#2532e3'), 'Cuerpo de agua'),
+    QgsPalettedRasterRenderer.Class(27, QColor('#ffffff'), 'No observado')
+]
+
+# Create renderer with classes
+renderer = QgsPalettedRasterRenderer(layer.dataProvider(), 1, classes)
+
+# Apply renderer
+layer.setRenderer(renderer)
+layer.triggerRepaint()
+```
+
+### Show how to import, analyze MODIS/VIIRS data
+
+#### Steps to import (GEE accesss)
+```
+# Instalar geemap
+import pip
+pip.main(['install', 'geemap'])
+
+# Importar bibliotecas requeridas
+import ee
+import geemap
+from qgis.core import QgsProject, QgsVectorLayer
+
+# Inicializar Earth Engine
+ee.Initialize()
+
+# Obtener la capa AOI de QGIS
+aoi_layer = QgsProject.instance().mapLayersByName('AOI')[0]
+
+# Convertir la capa QGIS a GeoDataFrame
+import geopandas as gpd
+features = [feat for feat in aoi_layer.getFeatures()]
+geoms = [feat.geometry().asWkt() for feat in features]
+from shapely import wkt
+geoms_shapely = [wkt.loads(geom) for geom in geoms]
+aoi = gpd.GeoDataFrame({'geometry': geoms_shapely}, crs=aoi_layer.crs().authid())
+
+# Crear listas de todos los años disponibles
+modis_years = list(range(2000, 2021))  # 2000-2020
+viirs_years = list(range(2012, 2022))  # 2012-2021
+
+# Función para crear FeatureCollection para un año y conjunto de datos específico
+def crear_coleccion_incendios(conjunto_datos, año):
+    """Crear un FeatureCollection para un conjunto de datos y año específico"""
+    if conjunto_datos == 'modis':
+        ruta = f"projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_{año}"
+    elif conjunto_datos == 'viirs':
+        ruta = f"projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_{año}"
+    else:
+        raise ValueError("El conjunto de datos debe ser 'modis' o 'viirs'")
+    
+    try:
+        return ee.FeatureCollection(ruta)
+    except Exception as e:
+        print(f"Advertencia: No se pudieron cargar los datos de {conjunto_datos} para el año {año}: {e}")
+        return None
+
+# Cargar todos los datos MODIS (2000-2020)
+print("Cargando datos MODIS (2000-2020)...")
+colecciones_modis = []
+for año in modis_years:
+    coleccion = crear_coleccion_incendios('modis', año)
+    if coleccion is not None:
+        colecciones_modis.append(coleccion)
+
+# Cargar todos los datos VIIRS (2012-2021)
+print("Cargando datos VIIRS (2012-2021)...")
+colecciones_viirs = []
+for año in viirs_years:
+    coleccion = crear_coleccion_incendios('viirs', año)
+    if coleccion is not None:
+        colecciones_viirs.append(coleccion)
+
+# Combinar todas las colecciones en FeatureCollections únicas
+print("Combinando todos los años...")
+todos_modis = ee.FeatureCollection(colecciones_modis).flatten()
+todos_viirs = ee.FeatureCollection(colecciones_viirs).flatten()
+
+# Filtrar por área de interés
+ee_aoi = geemap.geopandas_to_ee(aoi)
+print("Filtrando por área de interés...")
+todos_modis_aoi = todos_modis.filterBounds(ee_aoi)
+todos_viirs_aoi = todos_viirs.filterBounds(ee_aoi)
+
+print("¡Procesamiento completo!")
+print(f"Incendios MODIS en AOI: {todos_modis_aoi.size().getInfo()}")
+print(f"Incendios VIIRS en AOI: {todos_viirs_aoi.size().getInfo()}")
+
+# Exportar a GeoJSON y agregar al mapa de QGIS
+print("Exportando a archivos temporales y agregando al mapa...")
+import tempfile
+import os
+
+# Exportar MODIS
+modis_temp = os.path.join(tempfile.gettempdir(), 'incendios_modis.geojson')
+geemap.ee_to_geojson(todos_modis_aoi, modis_temp)
+capa_modis = QgsVectorLayer(modis_temp, 'Incendios MODIS (2000-2020)', 'ogr')
+QgsProject.instance().addMapLayer(capa_modis)
+
+# Exportar VIIRS
+viirs_temp = os.path.join(tempfile.gettempdir(), 'incendios_viirs.geojson')
+geemap.ee_to_geojson(todos_viirs_aoi, viirs_temp)
+capa_viirs = QgsVectorLayer(viirs_temp, 'Incendios VIIRS (2012-2021)', 'ogr')
+QgsProject.instance().addMapLayer(capa_viirs)
+
+print("¡Capas agregadas al mapa!")
+```
+
+#### Steps to analyze (hex grid)
+```
+import pandas as pd
+import geopandas as gpd
+from qgis.core import QgsProject, QgsVectorLayer
+from datetime import datetime
+from shapely import wkt
+import processing
+import tempfile
+import os
+
+# Obtener las capas de incendios del proyecto QGIS
+print("Obteniendo capas de incendios...")
+capa_modis = QgsProject.instance().mapLayersByName('Incendios MODIS (2000-2020)')[0]
+capa_viirs = QgsProject.instance().mapLayersByName('Incendios VIIRS (2012-2021)')[0]
+
+# Convertir capas QGIS a GeoDataFrames con conversión de fechas
+print("Convirtiendo capas a GeoDataFrames...")
+
+def qgis_to_gdf_with_dates(layer):
+    """Convertir capa QGIS a GeoDataFrame con fechas correctamente formateadas"""
+    features = []
+    for f in layer.getFeatures():
+        attrs = dict(zip([field.name() for field in f.fields()], f.attributes()))
+        geom = f.geometry()
+        
+        # Convertir QDate a datetime de Python
+        if 'acq_date' in attrs:
+            qdate = attrs['acq_date']
+            if qdate is not None:
+                attrs['acq_date'] = datetime(qdate.year(), qdate.month(), qdate.day())
+        
+        attrs['geometry'] = wkt.loads(geom.asWkt())
+        features.append(attrs)
+    
+    gdf = gpd.GeoDataFrame(features, geometry='geometry', crs=layer.crs().authid())
+    return gdf
+
+modis_gdf = qgis_to_gdf_with_dates(capa_modis)
+viirs_gdf = qgis_to_gdf_with_dates(capa_viirs)
+
+# Reproyectar a EPSG:5347
+modis_gdf = modis_gdf.to_crs('EPSG:5347')
+viirs_gdf = viirs_gdf.to_crs('EPSG:5347')
+
+# 1. Extraer solo geometría y fecha de ambos gdfs
+print("Extrayendo geometría y fecha de los datos MODIS...")
+modis_subset = modis_gdf[['geometry', 'acq_date']].copy()
+modis_subset['source'] = 'MODIS'
+
+print("Extrayendo geometría y fecha de los datos VIIRS...")
+viirs_subset = viirs_gdf[['geometry', 'acq_date']].copy()
+viirs_subset['source'] = 'VIIRS'
+
+# 2. Concatenar en un solo dataframe
+print("Concatenando dataframes...")
+combined_gdf = pd.concat([modis_subset, viirs_subset], ignore_index=True)
+combined_gdf = gpd.GeoDataFrame(combined_gdf, geometry='geometry', crs='EPSG:5347')
+
+# 3. Extraer año-mes de acq_date y agrupar por geometría, año-mes
+print("Procesando fechas y agrupando...")
+combined_gdf['acq_date'] = pd.to_datetime(combined_gdf['acq_date'])
+combined_gdf['year_month'] = combined_gdf['acq_date'].dt.to_period('M')
+
+# Agrupar por geometría y año-mes para obtener observaciones únicas por mes
+grouped = combined_gdf.groupby(['geometry', 'year_month']).size().reset_index(name='count')
+grouped_gdf = gpd.GeoDataFrame(grouped, geometry='geometry', crs='EPSG:5347')
+print(f"Total de combinaciones únicas geometría-mes: {len(grouped_gdf)}")
+
+# 4. Crear una cuadrícula hexagonal con 1km de espaciado usando QGIS
+print("Creando cuadrícula hexagonal...")
+aoi_layer = QgsProject.instance().mapLayersByName('AOI')[0]
+
+hex_result = processing.run("native:creategrid", {
+    'TYPE': 4,
+    'EXTENT': aoi_layer.extent(),
+    'HSPACING': 1000,
+    'VSPACING': 1000,
+    'HOVERLAY': 0,
+    'VOVERLAY': 0,
+    'CRS': aoi_layer.crs(),
+    'OUTPUT': 'memory:'
+})
+
+hex_layer = hex_result['OUTPUT']
+print(f"Creados {hex_layer.featureCount()} celdas hexagonales")
+
+# Convertir capa hexagonal a GeoDataFrame
+hex_features = []
+for f in hex_layer.getFeatures():
+    hex_features.append({'geometry': wkt.loads(f.geometry().asWkt())})
+
+hex_gdf = gpd.GeoDataFrame(hex_features, geometry='geometry', crs=hex_layer.crs().authid())
+hex_gdf = hex_gdf.to_crs('EPSG:5347')
+hex_gdf['cell_id'] = hex_gdf.index
+
+# 5. Contar número de meses por hexágono con al menos una observación
+print("Contando meses por hexágono...")
+points_in_hex = gpd.sjoin(grouped_gdf, hex_gdf, how='left', predicate='within')
+
+# Contar meses únicos por hexágono
+months_per_hex = points_in_hex.groupby('cell_id')['year_month'].nunique().reset_index(name='meses_con_observaciones')
+
+# 6. Contar observaciones totales por hexágono
+print("Contando observaciones totales por hexágono...")
+total_obs_per_hex = points_in_hex.groupby('cell_id')['count'].sum().reset_index(name='observaciones_totales')
+
+# Combinar ambas métricas en un solo GeoDataFrame
+hex_final = hex_gdf.merge(months_per_hex, on='cell_id', how='left')
+hex_final = hex_final.merge(total_obs_per_hex, on='cell_id', how='left')
+hex_final['meses_con_observaciones'] = hex_final['meses_con_observaciones'].fillna(0)
+hex_final['observaciones_totales'] = hex_final['observaciones_totales'].fillna(0)
+
+# Guardar como capa temporal y agregar al mapa
+print("Agregando cuadrícula hexagonal al mapa...")
+hex_temp = os.path.join(tempfile.gettempdir(), 'cuadricula_hexagonal_incendios.geojson')
+hex_final.to_file(hex_temp, driver='GeoJSON')
+hex_final_layer = QgsVectorLayer(hex_temp, 'Cuadrícula Hexagonal - Incendios', 'ogr')
+QgsProject.instance().addMapLayer(hex_final_layer)
+
+print("¡Agregación completada!")
+print(f"Meses máximos con observaciones en un hexágono: {hex_final['meses_con_observaciones'].max()}")
+print(f"Observaciones totales máximas en un hexágono: {hex_final['observaciones_totales'].max()}")
+```
+
+### FIRMS Dashboard
+
+#### Explore dashboard
+
+##### Explain what the data can, can't do
+
+#### Set up alerts for AOI by uploading boudndary file
+
