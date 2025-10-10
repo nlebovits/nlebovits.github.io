@@ -1,50 +1,85 @@
 ---
-title: "Identifying Vulnerable Water Suppliers"
+title: "Análisis de datos de incendios en Villa del Rosario"
 date: 09-10-2025 
 categories: [climate/environment, remote sensing]
 ---
 
-## Steps
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy()
+```
 
-### QGIS Installation
-- QGIS (https://qgis.org/download/)
-- QuickMapServices
-- Mapbiomas plugin
-- Google Earth Engine plugin
+## Pasos
 
-#### Create WFS connections to:
-- IGN (https://wms.ign.gob.ar/geoserver/ign/ows?version=1.0.0)
-- IDECOR (https://idecor-ws.mapascordoba.gob.ar/geoserver/idecor/wfs)
+### Instalación de QGIS
 
-Add IDECOR fire data!
+1. **Instalar QGIS**: Descargar e instalar desde [https://qgis.org/download/](https://qgis.org/download/)
+
+2. **Instalar complementos**:
+   - Abrir QGIS → Complementos → Administrar e instalar complementos
+   - Buscar e instalar:
+     - QuickMapServices
+     - Mapbiomas
+     - Google Earth Engine
+
+3. **Crear conexiones WFS**:
+   - Ir a Capa → Agregar capa → Agregar capa WFS
+   - Crear nueva conexión:
+   
+   **IGN**:
+   - Nombre: `IGN`
+   - URL: `https://wms.ign.gob.ar/geoserver/ign/ows?version=1.0.0`
+   - Conectar y explorar capas disponibles
+   
+   **IDECOR**:
+   - Nombre: `IDECOR`
+   - URL: `https://idecor-ws.mapascordoba.gob.ar/geoserver/idecor/wfs`
+   - Conectar y explorar capas disponibles
+   
+   ¡Agregar datos de incendios de IDECOR!
 
 ### Google Earth Engine
-- Create account (https://signup.earthengine.google.com/)
-- Authenticate in QGIS
 
-### Download the following datasets
-- Boundary file for our AOI (https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/poligonal_coovilros.geojson)
-- Gobal forest loss due to fire (actually, it's 1.2GB, so let's try to access in QGIS for cloud native access...)
-(Here's the short version uploaded to the cloud: https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/bosque_perdido_a_fuego_2001-24.tif)
+1. **Crear cuenta**:
+   - Ir a [https://signup.earthengine.google.com/](https://signup.earthengine.google.com/)
+   - Registrarse como cuenta de investigación o académica
+   - **Nota**: Requiere cuenta de Gmail
+
+2. **Autenticar en QGIS**:
+   - Abrir QGIS
+   - Ir a Complementos → Google Earth Engine
+   - Seleccionar "Autenticar"
+   - Se abrirá navegador para completar autenticación
+   - Una vez autenticado, el plugin estará listo para usar
+
+### Descargar los siguientes datasets
+
+1. **Área de interés (AOI)**:
+   - Descargar desde bucket AWS: [poligonal_coovilros.geojson](https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/poligonal_coovilros.geojson)
+   - **Opción alternativa**: Cargar directamente desde HTTPS en QGIS (ver consola abajo)
+
+2. **Pérdida global de bosque por incendios**:
+   - **Versión pequeña** (recomendada): [bosque_perdido_a_fuego_2001-24.tif](https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/bosque_perdido_a_fuego_2001-24.tif)
+   - **Versión completa** (1.2GB): [LAM_fire_forest_loss_2001-24.tif](https://glad.umd.edu/users/Alexandra/Fire_GFL_data/2001-24/LAM_fire_forest_loss_2001-24.tif)
+   - **Opción alternativa**: Cargar directamente desde HTTPS en QGIS (ver consola abajo)
+
+3. **Datos Mapbiomas**:
+   - Intentar obtener datos para Argentina vía plugin (2022, año más reciente)
+   - **Nota**: El servidor WMS de Mapbiomas ha estado inestable últimamente
 
 
- (https://glad.umd.edu/users/Alexandra/Fire_GFL_data/2001-24/LAM_fire_forest_loss_2001-24.tif)
-- Mapbiomas data for Argentina directly via plugin (2022, the most recent year)
-- GHSL population data (100m resolution) (https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_100/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0_R13_C13.zip)
+#### Respaldo si Mapbiomas no funciona:
 
-#### Backup if Mapbiomas is not working:
+1. **Descargar datos**:
+   - Descargar desde: [suelo_2022.tif](https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/suelo_2022.tif)
+   - Nombrar capa como `suelo_2022`
 
+2. **Ejecutar código de visualización**:
 
-Download small data from this link: https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/suelo_2022.tif
-
-Name layer as "suelo_2022"
-
-Run the following:
 ```
-# Get the layer
+# Obtener la capa
 layer = QgsProject.instance().mapLayersByName('suelo_2022')[0]
 
-# Create individual class entries for each pixel value
+# Crear entradas de clase individuales para cada valor de píxel
 classes = [
     QgsPalettedRasterRenderer.Class(3, QColor('#1f8d49'), 'Vegetación leñosa'),
     QgsPalettedRasterRenderer.Class(4, QColor('#1f8d49'), 'Vegetación leñosa'),
@@ -64,17 +99,41 @@ classes = [
     QgsPalettedRasterRenderer.Class(27, QColor('#ffffff'), 'No observado')
 ]
 
-# Create renderer with classes
+# Crear renderizador con clases
 renderer = QgsPalettedRasterRenderer(layer.dataProvider(), 1, classes)
 
-# Apply renderer
+# Aplicar renderizador
 layer.setRenderer(renderer)
 layer.triggerRepaint()
 ```
 
-### Show how to import, analyze MODIS/VIIRS data
+### Datos de incendios MODIS/VIIRS procesados (Opción alternativa)
 
-#### Steps to import (GEE accesss)
+Si no puedes configurar una cuenta de Google Earth Engine, puedes usar los datos de incendios ya procesados:
+
+1. **Datos MODIS procesados**:
+   - Descargar desde: [MODIS procesado](https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/_all_modis.geojson)
+   - Contiene todos los incendios MODIS detectados en el área de estudio (2000-2020)
+
+2. **Datos VIIRS procesados**:
+   - Descargar desde: [VIIRS procesado](https://arg-fulbright-data.s3.amazonaws.com/villa-del-rosario/datos/_all_viirs.geojson)
+   - Contiene todos los incendios VIIRS detectados en el área de estudio (2012-2021)
+
+3. **Cargar en QGIS**:
+   - Descargar ambos archivos GeoJSON
+   - En QGIS: Capa → Agregar capa → Agregar capa vectorial
+   - Seleccionar los archivos descargados
+   - Nombrar las capas como `Incendios MODIS (2000-2020)` y `Incendios VIIRS (2012-2021)`
+
+**Nota**: Si usas estos datos procesados, puedes proceder directamente al **Paso 4** (Preparar datos para agregación espacial y temporal) más abajo.
+
+### Mostrar cómo importar y analizar datos MODIS/VIIRS
+
+#### Pasos para importar (acceso GEE)
+
+**1. Instalar bibliotecas e inicializar Earth Engine**:
+Primero necesitamos instalar geemap, una biblioteca de Python que facilita el trabajo con Google Earth Engine desde QGIS. También importamos todas las bibliotecas necesarias para el procesamiento de datos geoespaciales y inicializamos la conexión con Earth Engine.
+
 ```
 # Instalar geemap
 import pip
@@ -84,18 +143,29 @@ pip.main(['install', 'geemap'])
 import ee
 import geemap
 from qgis.core import QgsProject, QgsVectorLayer
+import pandas as pd
+import geopandas as gpd
+from datetime import datetime
+from shapely import wkt
+import processing
+import tempfile
+import os
 
 # Inicializar Earth Engine
 ee.Initialize()
+```
 
+**2. Importar capas y datos de incendios**:
+En este paso obtenemos nuestra capa de área de interés (AOI) desde QGIS y la convertimos a un formato compatible con Earth Engine. Luego definimos los años disponibles para MODIS (2000-2020) y VIIRS (2012-2021) y creamos una función para cargar los datos de incendios por año desde los datasets públicos de Earth Engine.
+
+```
 # Obtener la capa AOI de QGIS
 aoi_layer = QgsProject.instance().mapLayersByName('AOI')[0]
 
 # Convertir la capa QGIS a GeoDataFrame
-import geopandas as gpd
 features = [feat for feat in aoi_layer.getFeatures()]
 geoms = [feat.geometry().asWkt() for feat in features]
-from shapely import wkt
+
 geoms_shapely = [wkt.loads(geom) for geom in geoms]
 aoi = gpd.GeoDataFrame({'geometry': geoms_shapely}, crs=aoi_layer.crs().authid())
 
@@ -149,11 +219,14 @@ todos_viirs_aoi = todos_viirs.filterBounds(ee_aoi)
 print("¡Procesamiento completo!")
 print(f"Incendios MODIS en AOI: {todos_modis_aoi.size().getInfo()}")
 print(f"Incendios VIIRS en AOI: {todos_viirs_aoi.size().getInfo()}")
+```
 
+**3. Agregar datos MODIS/VIIRS al mapa**:
+Una vez que hemos cargado y filtrado todos los datos de incendios por nuestra área de interés, los agregamos al mapa de QGIS. Esto nos permite visualizar todos los puntos de incendios detectados por ambos satélites en nuestro área de estudio.
+
+```
 # Exportar a GeoJSON y agregar al mapa de QGIS
 print("Exportando a archivos temporales y agregando al mapa...")
-import tempfile
-import os
 
 # Exportar MODIS
 modis_temp = os.path.join(tempfile.gettempdir(), 'incendios_modis.geojson')
@@ -170,17 +243,12 @@ QgsProject.instance().addMapLayer(capa_viirs)
 print("¡Capas agregadas al mapa!")
 ```
 
-#### Steps to analyze (hex grid)
-```
-import pandas as pd
-import geopandas as gpd
-from qgis.core import QgsProject, QgsVectorLayer
-from datetime import datetime
-from shapely import wkt
-import processing
-import tempfile
-import os
+#### Pasos para analizar (cuadrícula hexagonal)
 
+**4. Preparar datos para agregación espacial y temporal**:
+Ahora necesitamos procesar los datos de incendios para poder analizarlos espacialmente. Extraemos solo la geometría y fecha de cada incendio, y los combinamos en un solo dataset. Luego agrupamos por geometría y mes para obtener observaciones únicas por mes, eliminando duplicados temporales.
+
+```
 # Obtener las capas de incendios del proyecto QGIS
 print("Obteniendo capas de incendios...")
 capa_modis = QgsProject.instance().mapLayersByName('Incendios MODIS (2000-2020)')[0]
@@ -238,7 +306,12 @@ combined_gdf['year_month'] = combined_gdf['acq_date'].dt.to_period('M')
 grouped = combined_gdf.groupby(['geometry', 'year_month']).size().reset_index(name='count')
 grouped_gdf = gpd.GeoDataFrame(grouped, geometry='geometry', crs='EPSG:5347')
 print(f"Total de combinaciones únicas geometría-mes: {len(grouped_gdf)}")
+```
 
+**5. Crear cuadrícula hexagonal de 1km (resolución máxima de MODIS)**:
+Para analizar los patrones espaciales de incendios, creamos una cuadrícula hexagonal de 1km de espaciado. Elegimos hexágonos porque proporcionan una mejor distribución espacial que cuadrados, y 1km porque es la resolución máxima de los datos MODIS. Esto significa que no podemos agregar a una escala menor sin perder precisión.
+
+```
 # 4. Crear una cuadrícula hexagonal con 1km de espaciado usando QGIS
 print("Creando cuadrícula hexagonal...")
 aoi_layer = QgsProject.instance().mapLayersByName('AOI')[0]
@@ -256,7 +329,12 @@ hex_result = processing.run("native:creategrid", {
 
 hex_layer = hex_result['OUTPUT']
 print(f"Creados {hex_layer.featureCount()} celdas hexagonales")
+```
 
+**6. Unir observaciones a cuadrícula y contar**:
+Finalmente, unimos nuestros puntos de incendios con la cuadrícula hexagonal usando operaciones espaciales. Contamos dos métricas importantes: el número de meses únicos con observaciones por hexágono (frecuencia temporal) y el número total de observaciones por hexágono (intensidad). Esto nos da una visión completa de los patrones de incendios en el espacio y tiempo.
+
+```
 # Convertir capa hexagonal a GeoDataFrame
 hex_features = []
 for f in hex_layer.getFeatures():
@@ -295,11 +373,11 @@ print(f"Meses máximos con observaciones en un hexágono: {hex_final['meses_con_
 print(f"Observaciones totales máximas en un hexágono: {hex_final['observaciones_totales'].max()}")
 ```
 
-### FIRMS Dashboard
+### Dashboard FIRMS
 
-#### Explore dashboard
+#### Explorar dashboard
 
-##### Explain what the data can, can't do
+##### Explicar qué pueden y no pueden hacer los datos
 
-#### Set up alerts for AOI by uploading boudndary file
+#### Configurar alertas para AOI subiendo archivo de límites
 

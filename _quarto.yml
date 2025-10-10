@@ -27,6 +27,9 @@ format:
     toc: true
     pagetitle: "{{< meta title >}} | Nissim Lebovits"
     smooth-scroll: true
+    code-fold: false
+    code-tools: true
+    code-copy: true
 
 editor: source
 
