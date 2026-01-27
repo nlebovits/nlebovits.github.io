@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminario UBA: Datos abiertos para ciudades sustentables | Nissim Lebovits</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
+  <meta name="description" content="Nissim Lebovits - Cities, Climate, Data">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1 class="site-title">
+        <a href="/">Nissim Lebovits</a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/writing/">Writing & Talks</a></li>
+          <li><a href="https://www.linkedin.com/in/nlebovits/" target="_blank">LinkedIn</a></li>
+          <li><a href="/resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="content-wrapper">
+        
+<article>
+  <header>
+    <h2>Seminario UBA: Datos abiertos para ciudades sustentables</h2>
+    
+    <p class="post-date">06/02/2025</p>
+    
+  </header>
+
+  <p>A workshop and seminar on open data for sustainable cities, delivered at Universidad de Buenos Aires. The session covered exploring open data portals, real-world applications of open data in urban planning, and a hands-on workshop using Google Colab for spatial data analysis.</p>
+<p><strong>Topics covered:</strong></p>
+<ul>
+<li>Open data portals (Buenos Aires, federal government, Google Earth Engine)</li>
+<li>Case studies of open data applications</li>
+<li>Hands-on spatial data analysis workshop</li>
+</ul>
+<p><strong>Slides:</strong> <a href="https://docs.google.com/presentation/d/1Su-p5k57bC_bg4W4eyeve3FX28N7DHnm4JdHLccUXbc/pub">View presentation</a></p>
+<p><strong>Workshop:</strong> <a href="https://colab.research.google.com/drive/1cqbPNbRHsbVmNkgm23sESIALbekXzfcN">Google Colab notebook</a></p>
+<p><strong>Contact:</strong> <a href="https://datosaescalahumana.substack.com/">Datos a escala humana (blog)</a></p>
+
+</article>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="mode-container">
+  <button class="mode auto" aria-label="Auto mode" data-mode="auto"></button>
+  <button class="mode light" aria-label="Light mode" data-mode="light"></button>
+  <button class="mode dark" aria-label="Dark mode" data-mode="dark"></button>
+</div>
+
+<style>
+.mode-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.mode {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--border);
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.mode:hover {
+  opacity: 1;
+}
+
+.mode.active {
+  opacity: 1;
+}
+
+/* Auto mode - diagonal split */
+.mode.auto {
+  background: linear-gradient(to bottom right, var(--bg) 50%, var(--text) 50%);
+}
+
+/* Light mode - white fill */
+.mode.light {
+  background: #ffffff;
+}
+
+/* Dark mode - dark fill */
+.mode.dark {
+  background: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .mode-container {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+</style>
+
+<script>
+  // Get saved theme mode or default to 'auto'
+  const savedMode = localStorage.getItem('themeMode') || 'auto';
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(mode) {
+    let theme;
+    if (mode === 'auto') {
+      theme = getSystemTheme();
+    } else {
+      theme = mode;
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+
+  function setActiveButton(mode) {
+    document.querySelectorAll('.mode').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelector(`.mode[data-mode="${mode}"]`).classList.add('active');
+  }
+
+  // Apply saved mode on load
+  applyTheme(savedMode);
+  setActiveButton(savedMode);
+
+  // Listen for system theme changes when in auto mode
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const currentMode = localStorage.getItem('themeMode') || 'auto';
+    if (currentMode === 'auto') {
+      applyTheme('auto');
+    }
+  });
+
+  // Handle button clicks
+  document.querySelectorAll('.mode').forEach(button => {
+    button.addEventListener('click', function() {
+      const mode = this.getAttribute('data-mode');
+      localStorage.setItem('themeMode', mode);
+      applyTheme(mode);
+      setActiveButton(mode);
+    });
+  });
+</script>
+
+</body>
+</html>

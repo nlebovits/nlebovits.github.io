@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Prediction for Costa Rica | Nissim Lebovits</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
+  <meta name="description" content="Nissim Lebovits - Cities, Climate, Data">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1 class="site-title">
+        <a href="/">Nissim Lebovits</a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/writing/">Writing & Talks</a></li>
+          <li><a href="https://www.linkedin.com/in/nlebovits/" target="_blank">LinkedIn</a></li>
+          <li><a href="/resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="content-wrapper">
+        
+<article>
+  <header>
+    <h2>Flood Prediction for Costa Rica</h2>
+    
+    <p class="post-date">12/11/2023</p>
+    
+  </header>
+
+  <h2>Overview</h2>
+<p>As part of a broader UN-Habitat initiative, I have been developing a methodology to predict urban flooding probabilities using open source remote sensing data and machine learning models in Google Earth Engine. This work will help urban planners in Costa Rica mitigate biodiversity loss due to urban and agricultural expansion.</p>
+<h2>Data and Model</h2>
+<p>This work builds on a UN-Spider workflow that extracts flooding data for a given date, a paper on building a municipal flood index in Costa Rica, and two papers on building deep learning-based flood prediction models in Seoul and Brisbane. Data come via Google Earth Engine and are used to train a random forest model in Google Earth Engine via the Python API.</p>
+<p><strong>Code:</strong> <a href="https://gist.github.com/nlebovits/224359fc03ccf1cd4c5deb57067a4cec">View on GitHub Gist</a></p>
+<h2>Ongoing Work</h2>
+<p>Currently, I am working on several related components of this project: incorporating additional climate risks (heat hazard, landslide susceptibility, and drought risk), calculating population exposure and vulnerability, and scaling the workflow using Google Cloud and Compute Engine to allow for processing larger volumes of data faster.</p>
+
+</article>
+
+      </div>
+    </main>
+  </div>
+
+  <div class="mode-container">
+  <button class="mode auto" aria-label="Auto mode" data-mode="auto"></button>
+  <button class="mode light" aria-label="Light mode" data-mode="light"></button>
+  <button class="mode dark" aria-label="Dark mode" data-mode="dark"></button>
+</div>
+
+<style>
+.mode-container {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.mode {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--border);
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+  padding: 0;
+}
+
+.mode:hover {
+  opacity: 1;
+}
+
+.mode.active {
+  opacity: 1;
+}
+
+/* Auto mode - diagonal split */
+.mode.auto {
+  background: linear-gradient(to bottom right, var(--bg) 50%, var(--text) 50%);
+}
+
+/* Light mode - white fill */
+.mode.light {
+  background: #ffffff;
+}
+
+/* Dark mode - dark fill */
+.mode.dark {
+  background: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .mode-container {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+</style>
+
+<script>
+  // Get saved theme mode or default to 'auto'
+  const savedMode = localStorage.getItem('themeMode') || 'auto';
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(mode) {
+    let theme;
+    if (mode === 'auto') {
+      theme = getSystemTheme();
+    } else {
+      theme = mode;
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+
+  function setActiveButton(mode) {
+    document.querySelectorAll('.mode').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelector(`.mode[data-mode="${mode}"]`).classList.add('active');
+  }
+
+  // Apply saved mode on load
+  applyTheme(savedMode);
+  setActiveButton(savedMode);
+
+  // Listen for system theme changes when in auto mode
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const currentMode = localStorage.getItem('themeMode') || 'auto';
+    if (currentMode === 'auto') {
+      applyTheme('auto');
+    }
+  });
+
+  // Handle button clicks
+  document.querySelectorAll('.mode').forEach(button => {
+    button.addEventListener('click', function() {
+      const mode = this.getAttribute('data-mode');
+      localStorage.setItem('themeMode', mode);
+      applyTheme(mode);
+      setActiveButton(mode);
+    });
+  });
+</script>
+
+</body>
+</html>

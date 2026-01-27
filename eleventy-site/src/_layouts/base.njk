@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}Nissim Lebovits</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
+  <meta name="description" content="{{ description or 'Nissim Lebovits - Cities, Climate, Data' }}">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h1 class="site-title">
+        <a href="/">Nissim Lebovits</a>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/writing/">Writing & Talks</a></li>
+          <li><a href="https://www.linkedin.com/in/nlebovits/" target="_blank">LinkedIn</a></li>
+          <li><a href="/resume.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="content-wrapper">
+        {{ content | safe }}
+      </div>
+    </main>
+  </div>
+
+  {% include "theme-toggle.njk" %}
+</body>
+</html>
