@@ -1,0 +1,35 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nissim Lebovits</title>
+  <subtitle>Writing and Talks</subtitle>
+  <link href="https://nlebovits.github.io/feed.xml" rel="self"/>
+  <link href="https://nlebovits.github.io/"/>
+  <updated>{{ collections.writing[0].date | dateToRfc3339 }}</updated>
+  <id>https://nlebovits.github.io/</id>
+  <author>
+    <name>Nissim Lebovits</name>
+    <email>nissimlebovits@proton.me</email>
+  </author>
+  {%- for post in collections.writing | reverse %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="https://nlebovits.github.io{{ post.url }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>https://nlebovits.github.io{{ post.url }}</id>
+    <content type="html"><![CDATA[{{ post.templateContent | safe }}]]></content>
+  </entry>
+  {%- endfor %}
+  {%- for post in collections.talks | reverse %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="https://nlebovits.github.io{{ post.url }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>https://nlebovits.github.io{{ post.url }}</id>
+    <content type="html"><![CDATA[{{ post.templateContent | safe }}]]></content>
+  </entry>
+  {%- endfor %}
+</feed>

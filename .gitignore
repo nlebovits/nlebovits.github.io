@@ -1,6 +1,9 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+# Build output
+_site/
+node_modules/
 
-/.quarto/
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
