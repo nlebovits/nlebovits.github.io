@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Projects
+---
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+{% for post in collections.projects | reverse %}
+  <a href="{{ post.data.url }}" target="_blank" class="project-card">
+    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="project-thumbnail">
+    <div class="project-info">
+      <h3 class="project-title">{{ post.data.title }}</h3>
+      <p class="project-description">{{ post.data.description }}</p>
+    </div>
+  </a>
+{% endfor %}
+</div>

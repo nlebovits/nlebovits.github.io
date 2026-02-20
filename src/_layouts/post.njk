@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+<article>
+  <header>
+    <h2>{{ title }}</h2>
+    {% if date %}
+    <p class="post-date">{{ date | readableDate }}</p>
+    {% endif %}
+  </header>
+
+  {{ content | safe }}
+</article>
