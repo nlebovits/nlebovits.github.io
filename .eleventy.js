@@ -10,13 +10,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/resume.pdf");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
-  // Add date filter for post dates - shorter format like Tom's
+  // Add date filter for post dates - MM.DD.YYYY format
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return new Date(dateObj).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit'
-    });
+    const d = new Date(dateObj);
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${month}.${day}.${year}`;
   });
 
   return {

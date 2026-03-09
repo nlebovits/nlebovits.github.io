@@ -27,9 +27,18 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <h1 class="site-title">
-        <a href="/">Nissim Lebovits</a>
-      </h1>
+      <div class="sidebar-header">
+        <h1 class="site-title">
+          <a href="/">Nissim Lebovits</a>
+        </h1>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
 
       <nav>
         <ul>
@@ -52,6 +61,12 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
             </a>
           </li>
+          <li class="mobile-theme-toggle">
+            <span class="theme-label">Theme:</span>
+            <button class="mode auto" aria-label="Auto mode" data-mode="auto"></button>
+            <button class="mode light" aria-label="Light mode" data-mode="light"></button>
+            <button class="mode dark" aria-label="Dark mode" data-mode="dark"></button>
+          </li>
         </ul>
       </nav>
     </div>
@@ -71,5 +86,27 @@
   </footer>
 
   {% include "theme-toggle.njk" %}
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        sidebar.classList.toggle('menu-open');
+      });
+
+      // Close menu when clicking a nav link
+      document.querySelectorAll('.sidebar nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          sidebar.classList.remove('menu-open');
+        });
+      });
+    }
+  </script>
 </body>
 </html>

@@ -52,10 +52,28 @@
   background: #1a1a1a;
 }
 
-@media (max-width: 768px) {
+/* Mobile theme toggle in nav menu */
+.mobile-theme-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
   .mode-container {
-    top: 1rem;
-    right: 1rem;
+    display: none;
+  }
+
+  .mobile-theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .theme-label {
+    color: var(--secondary);
+    font-size: 0.9rem;
   }
 }
 </style>
@@ -81,8 +99,10 @@
   function setActiveButton(mode) {
     document.querySelectorAll('.mode').forEach(btn => {
       btn.classList.remove('active');
+      if (btn.getAttribute('data-mode') === mode) {
+        btn.classList.add('active');
+      }
     });
-    document.querySelector(`.mode[data-mode="${mode}"]`).classList.add('active');
   }
 
   // Apply saved mode on load
