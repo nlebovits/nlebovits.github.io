@@ -3,7 +3,6 @@ layout: post.njk
 title: "Barrios Visibles: Building Footprint Evidence of Systematic Population Undercount in Argentina's Informal Settlements"
 date: 2026-04-16
 tags: ["writing", "research", "geospatial"]
-draft: true
 ---
 
 > **Cite as:** Lebovits, N. (2026). Barrios Visibles: Building Footprint Evidence of Systematic Population Undercount in Argentina's Informal Settlements. *SSRN Working Paper*. [https://ssrn.com/abstract=6588819](https://ssrn.com/abstract=6588819)
@@ -27,6 +26,8 @@ RENABAP's official documentation provides several plausible explanations for thi
 Academic and policy literature also affirms broad precedent for systemic population undercounts in informal settlements (Thomson et al., 2021; Breuer et al., 2024; Kuffer et al., 2022), and offers various reasons for difficulties in keeping census data in sync with the actual population of informal settlements, including infrequent census cycles and budgetary constraints on national statistical offices, particularly in resource-constrained contexts (Leete, 2001), and government non-recognition of informal settlements themselves (Avis, 2016).
 
 In La Plata, I was able to present my findings to the municipal government, which has now incorporated the data into their first-ever comprehensive plan (Resa et al., 2025). Yet the scale of the discrepancy in La Plata—a city of only 800,000 people—made me wonder what this gap looked like nationally.
+
+Recent national-scale work has begun to surface the geographic bias in informal-settlement monitoring. Samper et al. (2025) use RENABAP to show that the largest total informal-settlement area in Argentina is not in Greater Buenos Aires (216 km²) but in extra-small urban areas of 2,000 to 50,000 residents (267 km²), and that smaller cities expanded faster between 2016 and 2023 — up to 2.78% annually in small urban areas versus 1.44% in large metropolitan areas. Their analysis takes RENABAP's polygons and family counts as given. This paper is complementary: rather than asking where the registered area is concentrated and how fast it is growing, I ask whether, within the polygons RENABAP itself maintains, the recorded household count matches the built evidence. The two critiques operate on orthogonal axes — geographic coverage and internal enumeration — and, as discussed in §5, their implications compound.
 
 ---
 
@@ -148,7 +149,13 @@ The core finding of this paper is that RENABAP's enumeration of Argentina's info
 
 This pattern replicates the systematic undercount documented across gridded population products in Thomson et al. (2021), who found that none of nine widely-used products captured more than 39% of field-enumerated slum residents across 118 settlements in Lagos, Port Harcourt, and Nairobi. Although RENABAP is a field registry rather than a gridded product, it inherits the same structural vulnerability: without a building-level floor, a single enumeration approach cannot resolve the density heterogeneity that defines informal settlements. Related work reaches similar conclusions across other contexts (Carr-Hill, 2013; Lucci et al., 2018; Kuffer et al., 2022; Breuer et al., 2024).
 
-### 5.1 Limitations
+### 5.1 Relationship to prior national-scale work
+
+These findings compound with recent area-based work. Samper et al. (2025) document that Argentina's informal-settlement area is geographically more dispersed than global monitoring assumes: extra-small urban areas hold 267 km² against 216 km² in Greater Buenos Aires, and small cities grew at 2.78% annually between 2016 and 2023 against 1.44% in large metropolitan areas. My results indicate that, within those same polygons, registered household counts are a low floor on actual household counts — and that the gap between building evidence and family counts is largest precisely in the peripheral, horizontally-developed settlements that dominate the smaller-city categories. The vertical-density regime documented in §4.2, which keeps CABA's household floor bounded by RENABAP rather than by footprint count, decays sharply with distance from the urban core; outside CABA, roughly 90% of settlements sit in the horizontal regime where footprint counts substantially exceed registered families. The geographic bias identified by Samper et al. and the enumeration gap identified here therefore reinforce one another: the cities that global monitoring already neglects are also the cities where the national registry most substantially undercounts.
+
+Samper et al.'s 2016–2023 area-based growth rates should be read with attention to RENABAP's registration waves. The 2016 baseline covered only localities above 10,000 inhabitants (Decreto 358/2017); the extension to localities of 2,000 to 10,000 was formalized only in 2021 (Decreto 880/2021), with a registration cutoff of 31 December 2018. The 2018 growth peak — 991 new settlements nationally, with the highest proportional increases (6.18%, 5.06%, 4.17%) concentrated in medium, small, and extra-small urban areas — falls at the cutoff for the later-added locality-size tier. The mechanism is explicitly acknowledged by RENABAP itself. In a 2023 Infobae interview discussing the most recent registry update, Juan Manuel D'Attoli — coordinator of RENABAP and a co-author of Samper et al. (2025) — explained that new entries added during a registration wave do not necessarily indicate new settlements, but rather include "barrios — muchos de ellos antiguos — que no se habían registrado previamente" [settlements, many of them old, that had not been previously registered] (Infobae 2023). Although Samper's team retro-mapped growth from satellite imagery, the settlements in question had first to be field-identified through the later survey waves. Some fraction of the apparent 2016–2023 growth in the smaller-city categories is therefore retrospective registration catch-up rather than contemporaneous physical expansion. This does not weaken the cross-sectional finding about where informal area concentrates; if anything it strengthens the case that the static total is more peripherally weighted than the year-by-year growth curve alone suggests.
+
+### 5.2 Limitations
 
 Several sources of error remain unaddressed by this analysis. Settlement boundaries change over time relative to those recorded by RENABAP, and the relationship between buildings, households, and persons per household is itself uncertain. Settlement-level variation in that relationship—especially vertical density, as documented in §4.2—is only partially captured by the max-of-two approach; settlements with mixed vertical and horizontal construction may be understated by either component of the floor.
 
@@ -156,7 +163,7 @@ A more structural limitation is coverage. RENABAP only registered settlements me
 
 A reader might object that RENABAP was never designed to enumerate all occupants, only titleable households. As noted in §2, however, Ley 27.453 gives the registry a mandate that extends well beyond titling, and in practice it serves as the population basis for infrastructure planning, resource allocation, and service delivery. That downstream use—not any narrower original purpose—is what this paper critiques.
 
-### 5.2 On the staleness objection
+### 5.3 On the staleness objection
 
 One obvious objection to the finding warrants direct preemption: that the gap merely reflects registry staleness—that RENABAP's figures are accurate as of enumeration but have fallen behind subsequent growth. This interpretation is not supported by RENABAP's own methodology. The registry provides for continuous updating through territorial visits, satellite analysis, and external submission forms (SISU, 2023). More decisively, RENABAP's own quality-control protocol explicitly requires that estimated family counts be consistent with the number of dwellings visible in satellite imagery: "Verificar que la cantidad de familias estimada sea consistente con la cantidad de viviendas que se ven desde la imagen satelital" (SISU, 2023). The gap documented in this paper is therefore not a lag between a static registry and a changing reality. It is a departure from RENABAP's own stated QA criterion, within polygons the registry itself has validated and actively maintains. The implication is that closing this gap requires methodological change, not merely temporal updating. An enumeration approach that does not incorporate building-level evidence as a floor will continue to undercount, even under perfect operational execution of RENABAP's current protocols. The substantive policy stakes—resource allocation, service provision, political representation—make this more than a measurement problem.
 
@@ -279,6 +286,8 @@ Cravino, C., Del Río, J. P., & Duarte, J. (2008). Magnitud y crecimiento de las
 
 Gómez, S. (2022, May 6). Censo 2022: Cómo se relevará a la población en las villas y asentamientos de la Ciudad. Clarín. https://www.clarin.com/ciudades/censo-2022-relevara-poblacion-villas-asentamientos-ciudad_0_Z3OMMd3cPq.html
 
+Infobae. (2023, December 19). Cinco millones de personas viven en barrios populares, según un relevamiento. https://www.infobae.com/sociedad/2023/12/19/cinco-millones-de-personas-viven-en-barrios-populares-segun-un-relevamiento/
+
 Instituto Geográfico Nacional (IGN). (2021). Metadatos de la capa: Planta Urbana. Dataset: Hábitat e Infraestructura Social. Buenos Aires: IGN, Dirección Nacional de Servicios Geográficos. https://www.ign.gob.ar/capas-sig/metadata/planta_urbana.pdf
 
 Instituto Nacional de Estadística y Censos (INDEC). (2023). Censo Nacional de Población, Hogares y Viviendas 2022: Condiciones habitacionales de la población, los hogares y las viviendas. Buenos Aires: INDEC. https://censo.gob.ar/wp-content/uploads/2023/11/censo2022_condiciones_habitacionales.pdf
@@ -310,6 +319,8 @@ Resa, S. D., Ríos, L. V., Rodríguez Daneri, M. E., Catino, N. S., Lara, J. M.,
 Reyes, A. (2021). Revealing the Contribution of Informal Settlements to Climate Change Mitigation in Latin America: A Case Study of Isidro Fabela, Mexico City. Sustainability, 13(21), 12108. https://doi.org/10.3390/su132112108
 
 Rodríguez, M. C., Rodríguez, M. F., & Zapata, M. C. (2018). Mercantilización y expansión de la inquilinización informal en villas de Buenos Aires, Argentina. Revista INVI, 33(93), 125–150.
+
+Samper, J., Pedrassoli, J., Jaramillo Espinosa, M., D'Attoli, J. M., Boanada-Fuchs, A., & Kuffer, M. (2025). Spatiotemporal Dynamics of Informal Settlements Across Argentine Cities: A National-Scale Analysis. SSRN Working Paper. https://ssrn.com/abstract=5588589
 
 SIEMPRO. (2021). Estudio Barrios Populares: Condiciones de Vida, Vivienda y Hábitat en contexto de aislamiento social, preventivo y obligatorio. Informe Final. Buenos Aires: Sistema de Información, Evaluación y Monitoreo de Programas Sociales, Ministerio de Desarrollo Social. https://www.argentina.gob.ar/sites/default/files/informe_final-barrios_populares.pdf
 
