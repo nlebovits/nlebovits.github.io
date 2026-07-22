@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: Talks &amp; Media
+---
+
+{% macro talkItem(post) %}
+  <li class="post-item talk-item">
+    <div class="talk-main">
+      <div class="post-title">
+        {% if post.data.url %}<a href="{{ post.data.url }}" target="_blank">{{ post.data.title }}</a>{% else %}{{ post.data.title }}{% endif %}
+      </div>
+      <div class="talk-venue">{{ post.data.venue }}</div>
+      <div class="talk-desc">{{ post.data.description }}</div>
+      {% if post.data.links %}
+      <div class="talk-links">
+        {% for link in post.data.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% if not loop.last %} <span class="talk-links-sep">·</span> {% endif %}{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="post-date">{{ post.date | readableDate }}</div>
+  </li>
+{% endmacro %}
+
+<h2>Talks &amp; Media</h2>
+
+<h3 class="talk-group">Talks</h3>
+<ul class="post-list">
+{% for post in collections.talks | reverse %}{% if post.data.type != "press" %}{{ talkItem(post) }}{% endif %}{% endfor %}
+</ul>
+
+<h3 class="talk-group">In the press</h3>
+<ul class="post-list">
+{% for post in collections.talks | reverse %}{% if post.data.type == "press" %}{{ talkItem(post) }}{% endif %}{% endfor %}
+</ul>

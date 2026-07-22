@@ -243,6 +243,48 @@ p {
   flex-shrink: 0;
 }
 
+.talk-item {
+  align-items: flex-start;
+}
+
+.talk-main {
+  flex: 1;
+}
+
+.talk-venue {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
+.talk-desc {
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+}
+
+.talk-links {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.talk-links-sep {
+  color: var(--secondary);
+}
+
+.talk-group {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--secondary);
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+.talk-group + .post-list {
+  margin-top: 0.75rem;
+}
+
 /* Code blocks */
 code {
   background: var(--code-bg);

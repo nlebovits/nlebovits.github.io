@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "resume": "node scripts/build-resume.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-rss": "^2.0.4"
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "marked": "^18.0.5"
   }
 }
