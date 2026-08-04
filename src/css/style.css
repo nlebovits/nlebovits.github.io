@@ -317,6 +317,61 @@ blockquote {
   font-style: italic;
 }
 
+/* Pull quotes - excerpted emphasis, distinct from blockquote citations */
+.pullquote {
+  max-width: 32ch;
+  margin: 2.75rem auto;
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--accent);
+}
+
+.pullquote p {
+  margin: 0;
+}
+
+/* Footnotes */
+.footnote-ref a {
+  font-size: 0.75em;
+  vertical-align: super;
+  line-height: 0;
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.footnotes hr {
+  display: none;
+}
+
+.footnotes ol {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.footnotes li {
+  margin-bottom: 0.6rem;
+}
+
+.footnotes li p {
+  margin: 0;
+}
+
+.footnote-backref {
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+
 /* Tables */
 table {
   width: 100%;

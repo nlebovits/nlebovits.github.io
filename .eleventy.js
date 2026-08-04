@@ -1,8 +1,12 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function(eleventyConfig) {
   // RSS plugin
   eleventyConfig.addPlugin(pluginRss);
+
+  // Footnotes: [^1] references and ^[inline] notes
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/css");
