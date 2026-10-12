@@ -1,5 +1,8 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownItFootnote = require("markdown-it-footnote");
+const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
   // RSS plugin
@@ -13,6 +16,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/resume.pdf");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
+
+  // Content hash for cache busting: href="/css/style.css?v={{ '/css/style.css' | assetHash }}"
+  eleventyConfig.addFilter("assetHash", (assetPath) => {
+    const contents = fs.readFileSync(path.join("src", assetPath));
+    return crypto.createHash("md5").update(contents).digest("hex").slice(0, 8);
+  });
 
   // Add date filter for post dates - MM.DD.YYYY format
   eleventyConfig.addFilter("readableDate", (dateObj) => {

@@ -440,6 +440,7 @@ img {
 .map-embed {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   margin: 2rem 0;
   border: 1px solid var(--border);

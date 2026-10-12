@@ -27,7 +27,7 @@ Do you like GeoParquet? Do you like not waiting forever while generating your PM
 
 Because of these features, `tylertoo` is particularly suited to large workflows; Chris Holmes and Isaac Corley at [Taylor Geospatial](https://taylorgeospatial.org/) have been using it to generate global PMTiles for the latest Fields of the World release, splitting runs across a Slurm cluster. Anecdotally, each year of data (~150 million polygons) takes about an hour, where previous runs took days or never finished. In their other testing (Planet, FIRMS) they've seen roughly 10x speedups, with much less swap: one Planet run needed a terabyte of swap for `tippecanoe` to finish. Here's an example of what the field boundary PMTiles generated with `tylertoo` look like:
 
-<iframe class="map-embed" src="https://pmtiles.io/#url=https://data.source.coop/ftw/global-data-2e/vector/2025/fields-2025.pmtiles&iframe=true&map=1.5/17.4/2" title="Fields of the World 2025 field boundaries in the PMTiles viewer" loading="lazy"></iframe>
+<iframe class="map-embed" width="100%" height="450" src="https://pmtiles.io/#url=https://data.source.coop/ftw/global-data-2e/vector/2025/fields-2025.pmtiles&iframe=true&map=1.5/17.4/2" title="Fields of the World 2025 field boundaries in the PMTiles viewer" loading="lazy"></iframe>
 
 Still not convinced? Check out the tutorials ([global boundaries](https://geoparquet-io.github.io/tylertoo/tutorials/madagascar/) and [Brazilian fields](https://geoparquet-io.github.io/tylertoo/tutorials/brazil/)) and try it yourself.
 
