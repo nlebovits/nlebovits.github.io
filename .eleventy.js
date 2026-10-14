@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
   // Footnotes: [^1] references and ^[inline] notes
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItFootnote));
 
+  // Typographer: curly quotes, en/em dashes, ellipses in Markdown prose
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.set({ typographer: true }));
+
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
